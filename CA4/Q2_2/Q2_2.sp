@@ -1,0 +1,209 @@
+
+.lib 'mm018.l' tt
+
+* NAND Gate
+.subckt NAND A B Y Vdd Vss
+M1 N1 A Vdd Vdd PMOS L=0.18u W=2u
+M2 Y B N1 Vdd PMOS L=0.18u W=2u
+M3 N1 A Vss Vss NMOS L=0.18u W=1u
+M4 Y B N1 Vss NMOS L=0.18u W=1u
+.ends NAND
+
+* Full Adder
+.subckt FA A B Cin S Cout Vdd Vss
+x1 A B AB_n Vdd Vss NAND
+x2 A Cin AC_n Vdd Vss NAND
+x3 B Cin BC_n Vdd Vss NAND
+x4 AB_n AC_n S_n Vdd Vss NAND
+x5 AB_n BC_n ABBC_n Vdd Vss NAND
+x6 S_n Cin S Vdd Vss NAND
+x7 ABBC_n S Cout Vdd Vss NAND
+.ends FA
+
+* 8-bit Wallace Tree Multiplier
+.SUBCKT MULT8 A0 A1 A2 A3 A4 A5 A6 A7 B0 B1 B2 B3 B4 B5 B6 B7 S0 S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 S12 S13 S14 S15 Vdd Vss
+* Generate Partial Products
+x00 A0 B0 S0 Vdd Vss NAND
+x01 A0 B1 PP01 Vdd Vss NAND
+x02 A0 B2 PP02 Vdd Vss NAND
+x03 A0 B3 PP03 Vdd Vss NAND
+x04 A0 B4 PP04 Vdd Vss NAND
+x05 A0 B5 PP05 Vdd Vss NAND
+x06 A0 B6 PP06 Vdd Vss NAND
+x07 A0 B7 PP07 Vdd Vss NAND
+
+x10 A1 B0 PP10 Vdd Vss NAND
+x11 A1 B1 PP11 Vdd Vss NAND
+x12 A1 B2 PP12 Vdd Vss NAND
+x13 A1 B3 PP13 Vdd Vss NAND
+x14 A1 B4 PP14 Vdd Vss NAND
+x15 A1 B5 PP15 Vdd Vss NAND
+x16 A1 B6 PP16 Vdd Vss NAND
+x17 A1 B7 PP17 Vdd Vss NAND
+
+x20 A2 B0 PP20 Vdd Vss NAND
+x21 A2 B1 PP21 Vdd Vss NAND
+x22 A2 B2 PP22 Vdd Vss NAND
+x23 A2 B3 PP23 Vdd Vss NAND
+x24 A2 B4 PP24 Vdd Vss NAND
+x25 A2 B5 PP25 Vdd Vss NAND
+x26 A2 B6 PP26 Vdd Vss NAND
+x27 A2 B7 PP27 Vdd Vss NAND
+
+x30 A3 B0 PP30 Vdd Vss NAND
+x31 A3 B1 PP31 Vdd Vss NAND
+x32 A3 B2 PP32 Vdd Vss NAND
+x33 A3 B3 PP33 Vdd Vss NAND
+x34 A3 B4 PP34 Vdd Vss NAND
+x35 A3 B5 PP35 Vdd Vss NAND
+x36 A3 B6 PP36 Vdd Vss NAND
+x37 A3 B7 PP37 Vdd Vss NAND
+
+x40 A4 B0 PP40 Vdd Vss NAND
+x41 A4 B1 PP41 Vdd Vss NAND
+x42 A4 B2 PP42 Vdd Vss NAND
+x43 A4 B3 PP43 Vdd Vss NAND
+x44 A4 B4 PP44 Vdd Vss NAND
+x45 A4 B5 PP45 Vdd Vss NAND
+x46 A4 B6 PP46 Vdd Vss NAND
+x47 A4 B7 PP47 Vdd Vss NAND
+
+x50 A5 B0 PP50 Vdd Vss NAND
+x51 A5 B1 PP51 Vdd Vss NAND
+x52 A5 B2 PP52 Vdd Vss NAND
+x53 A5 B3 PP53 Vdd Vss NAND
+x54 A5 B4 PP54 Vdd Vss NAND
+x55 A5 B5 PP55 Vdd Vss NAND
+x56 A5 B6 PP56 Vdd Vss NAND
+x57 A5 B7 PP57 Vdd Vss NAND
+
+x60 A6 B0 PP60 Vdd Vss NAND
+x61 A6 B1 PP61 Vdd Vss NAND
+x62 A6 B2 PP62 Vdd Vss NAND
+x63 A6 B3 PP63 Vdd Vss NAND
+x64 A6 B4 PP64 Vdd Vss NAND
+x65 A6 B5 PP65 Vdd Vss NAND
+x66 A6 B6 PP66 Vdd Vss NAND
+x67 A6 B7 PP67 Vdd Vss NAND
+
+x70 A7 B0 PP70 Vdd Vss NAND
+x71 A7 B1 PP71 Vdd Vss NAND
+x72 A7 B2 PP72 Vdd Vss NAND
+x73 A7 B3 PP73 Vdd Vss NAND
+x74 A7 B4 PP74 Vdd Vss NAND
+x75 A7 B5 PP75 Vdd Vss NAND
+x76 A7 B6 PP76 Vdd Vss NAND
+x77 A7 B7 PP77 Vdd Vss NAND
+
+* Wallace Tree Reduction 
+*S0 = PP00
+x100 PP01 PP10 0 S1 t1 Vdd Vss FA
+x101 PP02 PP20 PP11 t2 t3 Vdd Vss FA
+x102 PP12 PP30 PP21 t4 t5 Vdd Vss FA
+x103 PP04 PP40 PP31 t6 t7 Vdd Vss FA
+x104 PP13 PP22 0 t8 t9 Vdd Vss FA
+x105 PP05 PP50 PP41 t10 t11 Vdd Vss FA
+x106 PP23 PP32 PP14 t12 t13 Vdd Vss FA
+x107 PP33 PP24 PP42 t14 t15 Vdd Vss FA
+x108 PP15 PP51 PP60 t16 t17 Vdd Vss FA
+x109 PP43 PP34 PP25 t18 t19 Vdd Vss FA
+x110 PP52 PP16 PP61 t20 t21 Vdd Vss FA
+x111 PP70 PP07 0 t22 t23 Vdd Vss FA
+x112 PP62 PP26 PP53 t24 t25 Vdd Vss FA
+x113 PP35 PP17 PP71 t26 t27 Vdd Vss FA
+x114 PP45 PP54 PP36 t28 t29 Vdd Vss FA
+x115 PP63 PP27 PP72 t30 t31 Vdd Vss FA
+x116 PP55 PP46 PP64 t32 t33 Vdd Vss FA
+x117 PP56 PP65 PP47 t34 t35 Vdd Vss FA
+x118 PP66 PP57 PP75 t36 t37 Vdd Vss FA
+
+x119 t1 t2 0 S2 t38 Vdd Vss FA
+x1119 t3 t4 PP03 t39 t40 Vdd Vss FA
+x120 t5 t6 t8 t41 t42 Vdd Vss FA
+x121 t7 t9 t10 t43 t44 Vdd Vss FA
+x122 t11 t13 t14 t45 t46 Vdd Vss FA
+x123 t15 t17 t18 t47 t48 Vdd Vss FA
+x124 t21 t23 t24 t49 t50 Vdd Vss FA
+x125 t25 t27 t28 t50 t52 Vdd Vss FA
+x126 t29 t31 t32 t53 t54 Vdd Vss FA
+x127 t33 t34 PP74 t55 t56 Vdd Vss FA
+x128 t37 PP67 PP76 t57 t58 Vdd Vss FA
+
+x129 t38 t39 0 S3 t59 Vdd Vss FA
+x130 t42 t43 t12 t60 t61 Vdd Vss FA
+x131 t44 t45 t16 t62 t63 Vdd Vss FA
+x132 t47 t20 t22 t64 t65 Vdd Vss FA
+x133 t19 t49 t26 t66 t67 Vdd Vss FA
+x134 t50 t51 t30 t68 t69 Vdd Vss FA
+x135 t53 PP37 PP73 t70 t71 Vdd Vss FA
+x136 t56 t35 t36 t72 t73 Vdd Vss FA
+
+x137 t59 t40 t41 S4 t74 Vdd Vss FA
+x138 t61 t62 PP06 t75 t76 Vdd Vss FA
+x139 t63 t46 t64 t77 t78 Vdd Vss FA
+x140 t48 t66 PP44 t79 t80 Vdd Vss FA
+x141 t69 t51 t70 t81 t82 Vdd Vss FA
+x142 t71 t54 t55 t83 t84 Vdd Vss FA
+
+x143 t74 t60 0 S5 t85 Vdd Vss FA
+x144 t78 t65 t79 t86 t87 Vdd Vss FA
+x145 t80 t67 t68 t88 t89 Vdd Vss FA
+
+x146 t85 t75 0 S6 t90 Vdd Vss FA
+
+x147 t90 t76 t77 S7 t91 Vdd Vss FA
+
+x148 t91 t86 0 S8 t92 Vdd Vss FA
+
+x149 t92 t87 t88 S9 t93 Vdd Vss FA
+
+x150 t93 t89 t81 S10 t94 Vdd Vss FA
+
+x151 t94 t82 t83 S11 t95 Vdd Vss FA
+
+x152 t95 t84 t72 S12 t96 Vdd Vss FA
+
+x153 t96 t73 t57 S13 t97 Vdd Vss FA
+
+x154 t97 t58 PP77 S14 S15 Vdd Vss FA
+
+
+.ends MULT8
+* Power Supplies
+Vdd Vdd 0 1.8
+Vss Vss 0 0
+
+* Input Vectors (Example: A = 3, B = 2)
+* A = 3 -> 00000011
+V_A0 A0 0 DC 1.8V
+V_A1 A1 0 DC 1.8V
+V_A2 A2 0 DC 0V
+V_A3 A3 0 DC 0V
+V_A4 A4 0 DC 0V
+V_A5 A5 0 DC 0V
+V_A6 A6 0 DC 0V
+V_A7 A7 0 DC 0V
+
+* B = 2 -> 00000010
+V_B0 B0 0 DC 0V
+V_B1 B1 0 DC 1.8V
+V_B2 B2 0 DC 0V
+V_B3 B3 0 DC 0V
+V_B4 B4 0 DC 0V
+V_B5 B5 0 DC 0V
+V_B6 B6 0 DC 0V
+V_B7 B7 0 DC 0V
+
+* Instantiate the 8-bit Wallace Tree Multiplier
+X1 A0 A1 A2 A3 A4 A5 A6 A7 B0 B1 B2 B3 B4 B5 B6 B7 S0 S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 S12 S13 S14 S15 Vdd Vss MULT8
+
+* Print Outputs
+.print TRAN V(B7) V(B6) V(B5) V(B4) V(B3) V(B2) V(B1) V(B0)
+.print TRAN V(S15) V(S14) V(S13) V(S12) V(S11) V(S10) V(S9) V(S8)
+.print TRAN V(S7) V(S6) V(S5) V(S4) V(S3) V(S2) V(S1) V(S0)
+* Transient Analysis
+.tran 1n 100n
+
+.OPTIONS post=2
+
+.end

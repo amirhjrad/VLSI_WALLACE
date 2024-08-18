@@ -1,0 +1,1796 @@
+ ****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+  Copyright (c) 1986 - 2024 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: Q2_2.sp                                                           
+  Command line options: C:\synopsys\Hspice_P-2019.06-SP1-1\WIN64\hspice.com -i Q2_2.sp -o C:\Users\IDEAL\Desktop\CA4\Q2_2\Q2_2.lis
+  Start time: Fri Jun 21 19:31:43 2024
+  lic:  
+  lic: FLEXlm: SDK_12.3 
+  lic: USER:   IDEAL                HOSTNAME: DESKTOP-VQ2IIPN 
+  lic: HOSTID: 000c294610b7         PID:      6080 
+  lic: Using FLEXlm license file: 
+  lic: 27000@DESKTOP-VQ2IIPN 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2030/2030.12 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-VQ2IIPN 
+  lic:   
+1****** HSPICE -- P-2019.06-SP1-1 win64 (Sep 27 2019) ******                    
+ ******  
+ 
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x1.                             mult8              1.00 
+        2 x1.x00.                         nand               1.00 
+        3 x1.x01.                         nand               1.00 
+        4 x1.x02.                         nand               1.00 
+        5 x1.x03.                         nand               1.00 
+        6 x1.x04.                         nand               1.00 
+        7 x1.x05.                         nand               1.00 
+        8 x1.x06.                         nand               1.00 
+        9 x1.x07.                         nand               1.00 
+       10 x1.x10.                         nand               1.00 
+       11 x1.x11.                         nand               1.00 
+       12 x1.x12.                         nand               1.00 
+       13 x1.x13.                         nand               1.00 
+       14 x1.x14.                         nand               1.00 
+       15 x1.x15.                         nand               1.00 
+       16 x1.x16.                         nand               1.00 
+       17 x1.x17.                         nand               1.00 
+       18 x1.x20.                         nand               1.00 
+       19 x1.x21.                         nand               1.00 
+       20 x1.x22.                         nand               1.00 
+       21 x1.x23.                         nand               1.00 
+       22 x1.x24.                         nand               1.00 
+       23 x1.x25.                         nand               1.00 
+       24 x1.x26.                         nand               1.00 
+       25 x1.x27.                         nand               1.00 
+       26 x1.x30.                         nand               1.00 
+       27 x1.x31.                         nand               1.00 
+       28 x1.x32.                         nand               1.00 
+       29 x1.x33.                         nand               1.00 
+       30 x1.x34.                         nand               1.00 
+       31 x1.x35.                         nand               1.00 
+       32 x1.x36.                         nand               1.00 
+       33 x1.x37.                         nand               1.00 
+       34 x1.x40.                         nand               1.00 
+       35 x1.x41.                         nand               1.00 
+       36 x1.x42.                         nand               1.00 
+       37 x1.x43.                         nand               1.00 
+       38 x1.x44.                         nand               1.00 
+       39 x1.x45.                         nand               1.00 
+       40 x1.x46.                         nand               1.00 
+       41 x1.x47.                         nand               1.00 
+       42 x1.x50.                         nand               1.00 
+       43 x1.x51.                         nand               1.00 
+       44 x1.x52.                         nand               1.00 
+       45 x1.x53.                         nand               1.00 
+       46 x1.x54.                         nand               1.00 
+       47 x1.x55.                         nand               1.00 
+       48 x1.x56.                         nand               1.00 
+       49 x1.x57.                         nand               1.00 
+       50 x1.x60.                         nand               1.00 
+       51 x1.x61.                         nand               1.00 
+       52 x1.x62.                         nand               1.00 
+       53 x1.x63.                         nand               1.00 
+       54 x1.x64.                         nand               1.00 
+       55 x1.x65.                         nand               1.00 
+       56 x1.x66.                         nand               1.00 
+       57 x1.x67.                         nand               1.00 
+       58 x1.x70.                         nand               1.00 
+       59 x1.x71.                         nand               1.00 
+       60 x1.x72.                         nand               1.00 
+       61 x1.x73.                         nand               1.00 
+       62 x1.x74.                         nand               1.00 
+       63 x1.x75.                         nand               1.00 
+       64 x1.x76.                         nand               1.00 
+       65 x1.x77.                         nand               1.00 
+       66 x1.x100.                        fa                 1.00 
+       67 x1.x101.                        fa                 1.00 
+       68 x1.x102.                        fa                 1.00 
+       69 x1.x103.                        fa                 1.00 
+       70 x1.x104.                        fa                 1.00 
+       71 x1.x105.                        fa                 1.00 
+       72 x1.x106.                        fa                 1.00 
+       73 x1.x107.                        fa                 1.00 
+       74 x1.x108.                        fa                 1.00 
+       75 x1.x109.                        fa                 1.00 
+       76 x1.x110.                        fa                 1.00 
+       77 x1.x111.                        fa                 1.00 
+       78 x1.x112.                        fa                 1.00 
+       79 x1.x113.                        fa                 1.00 
+       80 x1.x114.                        fa                 1.00 
+       81 x1.x115.                        fa                 1.00 
+       82 x1.x116.                        fa                 1.00 
+       83 x1.x117.                        fa                 1.00 
+       84 x1.x118.                        fa                 1.00 
+       85 x1.x119.                        fa                 1.00 
+       86 x1.x1119.                       fa                 1.00 
+       87 x1.x120.                        fa                 1.00 
+       88 x1.x121.                        fa                 1.00 
+       89 x1.x122.                        fa                 1.00 
+       90 x1.x123.                        fa                 1.00 
+       91 x1.x124.                        fa                 1.00 
+       92 x1.x125.                        fa                 1.00 
+       93 x1.x126.                        fa                 1.00 
+       94 x1.x127.                        fa                 1.00 
+       95 x1.x128.                        fa                 1.00 
+       96 x1.x129.                        fa                 1.00 
+       97 x1.x130.                        fa                 1.00 
+       98 x1.x131.                        fa                 1.00 
+       99 x1.x132.                        fa                 1.00 
+      100 x1.x133.                        fa                 1.00 
+      101 x1.x134.                        fa                 1.00 
+      102 x1.x135.                        fa                 1.00 
+      103 x1.x136.                        fa                 1.00 
+      104 x1.x137.                        fa                 1.00 
+      105 x1.x138.                        fa                 1.00 
+      106 x1.x139.                        fa                 1.00 
+      107 x1.x140.                        fa                 1.00 
+      108 x1.x141.                        fa                 1.00 
+      109 x1.x142.                        fa                 1.00 
+      110 x1.x143.                        fa                 1.00 
+      111 x1.x144.                        fa                 1.00 
+      112 x1.x145.                        fa                 1.00 
+      113 x1.x146.                        fa                 1.00 
+      114 x1.x147.                        fa                 1.00 
+      115 x1.x148.                        fa                 1.00 
+      116 x1.x149.                        fa                 1.00 
+      117 x1.x150.                        fa                 1.00 
+      118 x1.x151.                        fa                 1.00 
+      119 x1.x152.                        fa                 1.00 
+      120 x1.x153.                        fa                 1.00 
+      121 x1.x154.                        fa                 1.00 
+      122 x1.x100.x1.                     nand               1.00 
+      123 x1.x100.x2.                     nand               1.00 
+      124 x1.x100.x3.                     nand               1.00 
+      125 x1.x100.x4.                     nand               1.00 
+      126 x1.x100.x5.                     nand               1.00 
+      127 x1.x100.x6.                     nand               1.00 
+      128 x1.x100.x7.                     nand               1.00 
+      129 x1.x101.x1.                     nand               1.00 
+      130 x1.x101.x2.                     nand               1.00 
+      131 x1.x101.x3.                     nand               1.00 
+      132 x1.x101.x4.                     nand               1.00 
+      133 x1.x101.x5.                     nand               1.00 
+      134 x1.x101.x6.                     nand               1.00 
+      135 x1.x101.x7.                     nand               1.00 
+      136 x1.x102.x1.                     nand               1.00 
+      137 x1.x102.x2.                     nand               1.00 
+      138 x1.x102.x3.                     nand               1.00 
+      139 x1.x102.x4.                     nand               1.00 
+      140 x1.x102.x5.                     nand               1.00 
+      141 x1.x102.x6.                     nand               1.00 
+      142 x1.x102.x7.                     nand               1.00 
+      143 x1.x103.x1.                     nand               1.00 
+      144 x1.x103.x2.                     nand               1.00 
+      145 x1.x103.x3.                     nand               1.00 
+      146 x1.x103.x4.                     nand               1.00 
+      147 x1.x103.x5.                     nand               1.00 
+      148 x1.x103.x6.                     nand               1.00 
+      149 x1.x103.x7.                     nand               1.00 
+      150 x1.x104.x1.                     nand               1.00 
+      151 x1.x104.x2.                     nand               1.00 
+      152 x1.x104.x3.                     nand               1.00 
+      153 x1.x104.x4.                     nand               1.00 
+      154 x1.x104.x5.                     nand               1.00 
+      155 x1.x104.x6.                     nand               1.00 
+      156 x1.x104.x7.                     nand               1.00 
+      157 x1.x105.x1.                     nand               1.00 
+      158 x1.x105.x2.                     nand               1.00 
+      159 x1.x105.x3.                     nand               1.00 
+      160 x1.x105.x4.                     nand               1.00 
+      161 x1.x105.x5.                     nand               1.00 
+      162 x1.x105.x6.                     nand               1.00 
+      163 x1.x105.x7.                     nand               1.00 
+      164 x1.x106.x1.                     nand               1.00 
+      165 x1.x106.x2.                     nand               1.00 
+      166 x1.x106.x3.                     nand               1.00 
+      167 x1.x106.x4.                     nand               1.00 
+      168 x1.x106.x5.                     nand               1.00 
+      169 x1.x106.x6.                     nand               1.00 
+      170 x1.x106.x7.                     nand               1.00 
+      171 x1.x107.x1.                     nand               1.00 
+      172 x1.x107.x2.                     nand               1.00 
+      173 x1.x107.x3.                     nand               1.00 
+      174 x1.x107.x4.                     nand               1.00 
+      175 x1.x107.x5.                     nand               1.00 
+      176 x1.x107.x6.                     nand               1.00 
+      177 x1.x107.x7.                     nand               1.00 
+      178 x1.x108.x1.                     nand               1.00 
+      179 x1.x108.x2.                     nand               1.00 
+      180 x1.x108.x3.                     nand               1.00 
+      181 x1.x108.x4.                     nand               1.00 
+      182 x1.x108.x5.                     nand               1.00 
+      183 x1.x108.x6.                     nand               1.00 
+      184 x1.x108.x7.                     nand               1.00 
+      185 x1.x109.x1.                     nand               1.00 
+      186 x1.x109.x2.                     nand               1.00 
+      187 x1.x109.x3.                     nand               1.00 
+      188 x1.x109.x4.                     nand               1.00 
+      189 x1.x109.x5.                     nand               1.00 
+      190 x1.x109.x6.                     nand               1.00 
+      191 x1.x109.x7.                     nand               1.00 
+      192 x1.x110.x1.                     nand               1.00 
+      193 x1.x110.x2.                     nand               1.00 
+      194 x1.x110.x3.                     nand               1.00 
+      195 x1.x110.x4.                     nand               1.00 
+      196 x1.x110.x5.                     nand               1.00 
+      197 x1.x110.x6.                     nand               1.00 
+      198 x1.x110.x7.                     nand               1.00 
+      199 x1.x111.x1.                     nand               1.00 
+      200 x1.x111.x2.                     nand               1.00 
+      201 x1.x111.x3.                     nand               1.00 
+      202 x1.x111.x4.                     nand               1.00 
+      203 x1.x111.x5.                     nand               1.00 
+      204 x1.x111.x6.                     nand               1.00 
+      205 x1.x111.x7.                     nand               1.00 
+      206 x1.x112.x1.                     nand               1.00 
+      207 x1.x112.x2.                     nand               1.00 
+      208 x1.x112.x3.                     nand               1.00 
+      209 x1.x112.x4.                     nand               1.00 
+      210 x1.x112.x5.                     nand               1.00 
+      211 x1.x112.x6.                     nand               1.00 
+      212 x1.x112.x7.                     nand               1.00 
+      213 x1.x113.x1.                     nand               1.00 
+      214 x1.x113.x2.                     nand               1.00 
+      215 x1.x113.x3.                     nand               1.00 
+      216 x1.x113.x4.                     nand               1.00 
+      217 x1.x113.x5.                     nand               1.00 
+      218 x1.x113.x6.                     nand               1.00 
+      219 x1.x113.x7.                     nand               1.00 
+      220 x1.x114.x1.                     nand               1.00 
+      221 x1.x114.x2.                     nand               1.00 
+      222 x1.x114.x3.                     nand               1.00 
+      223 x1.x114.x4.                     nand               1.00 
+      224 x1.x114.x5.                     nand               1.00 
+      225 x1.x114.x6.                     nand               1.00 
+      226 x1.x114.x7.                     nand               1.00 
+      227 x1.x115.x1.                     nand               1.00 
+      228 x1.x115.x2.                     nand               1.00 
+      229 x1.x115.x3.                     nand               1.00 
+      230 x1.x115.x4.                     nand               1.00 
+      231 x1.x115.x5.                     nand               1.00 
+      232 x1.x115.x6.                     nand               1.00 
+      233 x1.x115.x7.                     nand               1.00 
+      234 x1.x116.x1.                     nand               1.00 
+      235 x1.x116.x2.                     nand               1.00 
+      236 x1.x116.x3.                     nand               1.00 
+      237 x1.x116.x4.                     nand               1.00 
+      238 x1.x116.x5.                     nand               1.00 
+      239 x1.x116.x6.                     nand               1.00 
+      240 x1.x116.x7.                     nand               1.00 
+      241 x1.x117.x1.                     nand               1.00 
+      242 x1.x117.x2.                     nand               1.00 
+      243 x1.x117.x3.                     nand               1.00 
+      244 x1.x117.x4.                     nand               1.00 
+      245 x1.x117.x5.                     nand               1.00 
+      246 x1.x117.x6.                     nand               1.00 
+      247 x1.x117.x7.                     nand               1.00 
+      248 x1.x118.x1.                     nand               1.00 
+      249 x1.x118.x2.                     nand               1.00 
+      250 x1.x118.x3.                     nand               1.00 
+      251 x1.x118.x4.                     nand               1.00 
+      252 x1.x118.x5.                     nand               1.00 
+      253 x1.x118.x6.                     nand               1.00 
+      254 x1.x118.x7.                     nand               1.00 
+      255 x1.x119.x1.                     nand               1.00 
+      256 x1.x119.x2.                     nand               1.00 
+      257 x1.x119.x3.                     nand               1.00 
+      258 x1.x119.x4.                     nand               1.00 
+      259 x1.x119.x5.                     nand               1.00 
+      260 x1.x119.x6.                     nand               1.00 
+      261 x1.x119.x7.                     nand               1.00 
+      262 x1.x1119.x1.                    nand               1.00 
+      263 x1.x1119.x2.                    nand               1.00 
+      264 x1.x1119.x3.                    nand               1.00 
+      265 x1.x1119.x4.                    nand               1.00 
+      266 x1.x1119.x5.                    nand               1.00 
+      267 x1.x1119.x6.                    nand               1.00 
+      268 x1.x1119.x7.                    nand               1.00 
+      269 x1.x120.x1.                     nand               1.00 
+      270 x1.x120.x2.                     nand               1.00 
+      271 x1.x120.x3.                     nand               1.00 
+      272 x1.x120.x4.                     nand               1.00 
+      273 x1.x120.x5.                     nand               1.00 
+      274 x1.x120.x6.                     nand               1.00 
+      275 x1.x120.x7.                     nand               1.00 
+      276 x1.x121.x1.                     nand               1.00 
+      277 x1.x121.x2.                     nand               1.00 
+      278 x1.x121.x3.                     nand               1.00 
+      279 x1.x121.x4.                     nand               1.00 
+      280 x1.x121.x5.                     nand               1.00 
+      281 x1.x121.x6.                     nand               1.00 
+      282 x1.x121.x7.                     nand               1.00 
+      283 x1.x122.x1.                     nand               1.00 
+      284 x1.x122.x2.                     nand               1.00 
+      285 x1.x122.x3.                     nand               1.00 
+      286 x1.x122.x4.                     nand               1.00 
+      287 x1.x122.x5.                     nand               1.00 
+      288 x1.x122.x6.                     nand               1.00 
+      289 x1.x122.x7.                     nand               1.00 
+      290 x1.x123.x1.                     nand               1.00 
+      291 x1.x123.x2.                     nand               1.00 
+      292 x1.x123.x3.                     nand               1.00 
+      293 x1.x123.x4.                     nand               1.00 
+      294 x1.x123.x5.                     nand               1.00 
+      295 x1.x123.x6.                     nand               1.00 
+      296 x1.x123.x7.                     nand               1.00 
+      297 x1.x124.x1.                     nand               1.00 
+      298 x1.x124.x2.                     nand               1.00 
+      299 x1.x124.x3.                     nand               1.00 
+      300 x1.x124.x4.                     nand               1.00 
+      301 x1.x124.x5.                     nand               1.00 
+      302 x1.x124.x6.                     nand               1.00 
+      303 x1.x124.x7.                     nand               1.00 
+      304 x1.x125.x1.                     nand               1.00 
+      305 x1.x125.x2.                     nand               1.00 
+      306 x1.x125.x3.                     nand               1.00 
+      307 x1.x125.x4.                     nand               1.00 
+      308 x1.x125.x5.                     nand               1.00 
+      309 x1.x125.x6.                     nand               1.00 
+      310 x1.x125.x7.                     nand               1.00 
+      311 x1.x126.x1.                     nand               1.00 
+      312 x1.x126.x2.                     nand               1.00 
+      313 x1.x126.x3.                     nand               1.00 
+      314 x1.x126.x4.                     nand               1.00 
+      315 x1.x126.x5.                     nand               1.00 
+      316 x1.x126.x6.                     nand               1.00 
+      317 x1.x126.x7.                     nand               1.00 
+      318 x1.x127.x1.                     nand               1.00 
+      319 x1.x127.x2.                     nand               1.00 
+      320 x1.x127.x3.                     nand               1.00 
+      321 x1.x127.x4.                     nand               1.00 
+      322 x1.x127.x5.                     nand               1.00 
+      323 x1.x127.x6.                     nand               1.00 
+      324 x1.x127.x7.                     nand               1.00 
+      325 x1.x128.x1.                     nand               1.00 
+      326 x1.x128.x2.                     nand               1.00 
+      327 x1.x128.x3.                     nand               1.00 
+      328 x1.x128.x4.                     nand               1.00 
+      329 x1.x128.x5.                     nand               1.00 
+      330 x1.x128.x6.                     nand               1.00 
+      331 x1.x128.x7.                     nand               1.00 
+      332 x1.x129.x1.                     nand               1.00 
+      333 x1.x129.x2.                     nand               1.00 
+      334 x1.x129.x3.                     nand               1.00 
+      335 x1.x129.x4.                     nand               1.00 
+      336 x1.x129.x5.                     nand               1.00 
+      337 x1.x129.x6.                     nand               1.00 
+      338 x1.x129.x7.                     nand               1.00 
+      339 x1.x130.x1.                     nand               1.00 
+      340 x1.x130.x2.                     nand               1.00 
+      341 x1.x130.x3.                     nand               1.00 
+      342 x1.x130.x4.                     nand               1.00 
+      343 x1.x130.x5.                     nand               1.00 
+      344 x1.x130.x6.                     nand               1.00 
+      345 x1.x130.x7.                     nand               1.00 
+      346 x1.x131.x1.                     nand               1.00 
+      347 x1.x131.x2.                     nand               1.00 
+      348 x1.x131.x3.                     nand               1.00 
+      349 x1.x131.x4.                     nand               1.00 
+      350 x1.x131.x5.                     nand               1.00 
+      351 x1.x131.x6.                     nand               1.00 
+      352 x1.x131.x7.                     nand               1.00 
+      353 x1.x132.x1.                     nand               1.00 
+      354 x1.x132.x2.                     nand               1.00 
+      355 x1.x132.x3.                     nand               1.00 
+      356 x1.x132.x4.                     nand               1.00 
+      357 x1.x132.x5.                     nand               1.00 
+      358 x1.x132.x6.                     nand               1.00 
+      359 x1.x132.x7.                     nand               1.00 
+      360 x1.x133.x1.                     nand               1.00 
+      361 x1.x133.x2.                     nand               1.00 
+      362 x1.x133.x3.                     nand               1.00 
+      363 x1.x133.x4.                     nand               1.00 
+      364 x1.x133.x5.                     nand               1.00 
+      365 x1.x133.x6.                     nand               1.00 
+      366 x1.x133.x7.                     nand               1.00 
+      367 x1.x134.x1.                     nand               1.00 
+      368 x1.x134.x2.                     nand               1.00 
+      369 x1.x134.x3.                     nand               1.00 
+      370 x1.x134.x4.                     nand               1.00 
+      371 x1.x134.x5.                     nand               1.00 
+      372 x1.x134.x6.                     nand               1.00 
+      373 x1.x134.x7.                     nand               1.00 
+      374 x1.x135.x1.                     nand               1.00 
+      375 x1.x135.x2.                     nand               1.00 
+      376 x1.x135.x3.                     nand               1.00 
+      377 x1.x135.x4.                     nand               1.00 
+      378 x1.x135.x5.                     nand               1.00 
+      379 x1.x135.x6.                     nand               1.00 
+      380 x1.x135.x7.                     nand               1.00 
+      381 x1.x136.x1.                     nand               1.00 
+      382 x1.x136.x2.                     nand               1.00 
+      383 x1.x136.x3.                     nand               1.00 
+      384 x1.x136.x4.                     nand               1.00 
+      385 x1.x136.x5.                     nand               1.00 
+      386 x1.x136.x6.                     nand               1.00 
+      387 x1.x136.x7.                     nand               1.00 
+      388 x1.x137.x1.                     nand               1.00 
+      389 x1.x137.x2.                     nand               1.00 
+      390 x1.x137.x3.                     nand               1.00 
+      391 x1.x137.x4.                     nand               1.00 
+      392 x1.x137.x5.                     nand               1.00 
+      393 x1.x137.x6.                     nand               1.00 
+      394 x1.x137.x7.                     nand               1.00 
+      395 x1.x138.x1.                     nand               1.00 
+      396 x1.x138.x2.                     nand               1.00 
+      397 x1.x138.x3.                     nand               1.00 
+      398 x1.x138.x4.                     nand               1.00 
+      399 x1.x138.x5.                     nand               1.00 
+      400 x1.x138.x6.                     nand               1.00 
+      401 x1.x138.x7.                     nand               1.00 
+      402 x1.x139.x1.                     nand               1.00 
+      403 x1.x139.x2.                     nand               1.00 
+      404 x1.x139.x3.                     nand               1.00 
+      405 x1.x139.x4.                     nand               1.00 
+      406 x1.x139.x5.                     nand               1.00 
+      407 x1.x139.x6.                     nand               1.00 
+      408 x1.x139.x7.                     nand               1.00 
+      409 x1.x140.x1.                     nand               1.00 
+      410 x1.x140.x2.                     nand               1.00 
+      411 x1.x140.x3.                     nand               1.00 
+      412 x1.x140.x4.                     nand               1.00 
+      413 x1.x140.x5.                     nand               1.00 
+      414 x1.x140.x6.                     nand               1.00 
+      415 x1.x140.x7.                     nand               1.00 
+      416 x1.x141.x1.                     nand               1.00 
+      417 x1.x141.x2.                     nand               1.00 
+      418 x1.x141.x3.                     nand               1.00 
+      419 x1.x141.x4.                     nand               1.00 
+      420 x1.x141.x5.                     nand               1.00 
+      421 x1.x141.x6.                     nand               1.00 
+      422 x1.x141.x7.                     nand               1.00 
+      423 x1.x142.x1.                     nand               1.00 
+      424 x1.x142.x2.                     nand               1.00 
+      425 x1.x142.x3.                     nand               1.00 
+      426 x1.x142.x4.                     nand               1.00 
+      427 x1.x142.x5.                     nand               1.00 
+      428 x1.x142.x6.                     nand               1.00 
+      429 x1.x142.x7.                     nand               1.00 
+      430 x1.x143.x1.                     nand               1.00 
+      431 x1.x143.x2.                     nand               1.00 
+      432 x1.x143.x3.                     nand               1.00 
+      433 x1.x143.x4.                     nand               1.00 
+      434 x1.x143.x5.                     nand               1.00 
+      435 x1.x143.x6.                     nand               1.00 
+      436 x1.x143.x7.                     nand               1.00 
+      437 x1.x144.x1.                     nand               1.00 
+      438 x1.x144.x2.                     nand               1.00 
+      439 x1.x144.x3.                     nand               1.00 
+      440 x1.x144.x4.                     nand               1.00 
+      441 x1.x144.x5.                     nand               1.00 
+      442 x1.x144.x6.                     nand               1.00 
+      443 x1.x144.x7.                     nand               1.00 
+      444 x1.x145.x1.                     nand               1.00 
+      445 x1.x145.x2.                     nand               1.00 
+      446 x1.x145.x3.                     nand               1.00 
+      447 x1.x145.x4.                     nand               1.00 
+      448 x1.x145.x5.                     nand               1.00 
+      449 x1.x145.x6.                     nand               1.00 
+      450 x1.x145.x7.                     nand               1.00 
+      451 x1.x146.x1.                     nand               1.00 
+      452 x1.x146.x2.                     nand               1.00 
+      453 x1.x146.x3.                     nand               1.00 
+      454 x1.x146.x4.                     nand               1.00 
+      455 x1.x146.x5.                     nand               1.00 
+      456 x1.x146.x6.                     nand               1.00 
+      457 x1.x146.x7.                     nand               1.00 
+      458 x1.x147.x1.                     nand               1.00 
+      459 x1.x147.x2.                     nand               1.00 
+      460 x1.x147.x3.                     nand               1.00 
+      461 x1.x147.x4.                     nand               1.00 
+      462 x1.x147.x5.                     nand               1.00 
+      463 x1.x147.x6.                     nand               1.00 
+      464 x1.x147.x7.                     nand               1.00 
+      465 x1.x148.x1.                     nand               1.00 
+      466 x1.x148.x2.                     nand               1.00 
+      467 x1.x148.x3.                     nand               1.00 
+      468 x1.x148.x4.                     nand               1.00 
+      469 x1.x148.x5.                     nand               1.00 
+      470 x1.x148.x6.                     nand               1.00 
+      471 x1.x148.x7.                     nand               1.00 
+      472 x1.x149.x1.                     nand               1.00 
+      473 x1.x149.x2.                     nand               1.00 
+      474 x1.x149.x3.                     nand               1.00 
+      475 x1.x149.x4.                     nand               1.00 
+      476 x1.x149.x5.                     nand               1.00 
+      477 x1.x149.x6.                     nand               1.00 
+      478 x1.x149.x7.                     nand               1.00 
+      479 x1.x150.x1.                     nand               1.00 
+      480 x1.x150.x2.                     nand               1.00 
+      481 x1.x150.x3.                     nand               1.00 
+      482 x1.x150.x4.                     nand               1.00 
+      483 x1.x150.x5.                     nand               1.00 
+      484 x1.x150.x6.                     nand               1.00 
+      485 x1.x150.x7.                     nand               1.00 
+      486 x1.x151.x1.                     nand               1.00 
+      487 x1.x151.x2.                     nand               1.00 
+      488 x1.x151.x3.                     nand               1.00 
+      489 x1.x151.x4.                     nand               1.00 
+      490 x1.x151.x5.                     nand               1.00 
+      491 x1.x151.x6.                     nand               1.00 
+      492 x1.x151.x7.                     nand               1.00 
+      493 x1.x152.x1.                     nand               1.00 
+      494 x1.x152.x2.                     nand               1.00 
+      495 x1.x152.x3.                     nand               1.00 
+      496 x1.x152.x4.                     nand               1.00 
+      497 x1.x152.x5.                     nand               1.00 
+      498 x1.x152.x6.                     nand               1.00 
+      499 x1.x152.x7.                     nand               1.00 
+      500 x1.x153.x1.                     nand               1.00 
+      501 x1.x153.x2.                     nand               1.00 
+      502 x1.x153.x3.                     nand               1.00 
+      503 x1.x153.x4.                     nand               1.00 
+      504 x1.x153.x5.                     nand               1.00 
+      505 x1.x153.x6.                     nand               1.00 
+      506 x1.x153.x7.                     nand               1.00 
+      507 x1.x154.x1.                     nand               1.00 
+      508 x1.x154.x2.                     nand               1.00 
+      509 x1.x154.x3.                     nand               1.00 
+      510 x1.x154.x4.                     nand               1.00 
+      511 x1.x154.x5.                     nand               1.00 
+      512 x1.x154.x6.                     nand               1.00 
+      513 x1.x154.x7.                     nand               1.00 
+ ***************************************************************************
+ ***        model parameters  model name:   0:pmos.6   model type:pmos   ***
+ ***************************************************************************
+
+   *** general parameters ***
+    deriv=   0.           
+
+   ***  level 49  model parameters  ***
+
+       hspver=    2006.03               level=         49         
+      version=        3.1            paramchk=          0         
+       apwarn=          1                lite=          0         
+       vgslim=          0             binUnit=          2         
+       capMod=          0               xpart=          1         
+       mobMod=          1              nqsMod=          0         
+       stiMod=          0                 elm=          5         
+     sfvtflag=          0                 tox=   4.08e-09 meter   
+           xj=    1.7e-07 meter       binflag=          0         
+         lmin=    1.8e-07 meter          lmax=      5e-07 meter   
+         wmin=    1.3e-06 meter          wmax=   1.01e-05 meter   
+         lref=          0 meter          wref=          0 meter   
+         lint=    1.5e-08 meter          wint=    1.5e-08 meter   
+        lmult=          1               wmult=          1         
+           ll=          0                 lln=          1         
+           lw=          0                 lwn=          1         
+          lwl=          0                  wl=          0         
+          wln=          1                  ww=          0         
+          wwn=          1                 wwl=          0         
+          dwg=          0 m/V             dwb=          0 m/V^1/2 
+           xl=     -2e-08                  xw=          0         
+           a0=    1.27343                 ags=       0.02 V^-1    
+           b0=          0 meter            b1=          0 meter   
+         keta=  0.0150006 V^-1           voff=  -0.130818 V       
+        ngate=          0 cm^-3           vbx=          0 V       
+          vbm=         -3 V                xt=   1.55e-07 meter   
+         vth0=  -0.449372 V               nch=    3.9e+17 cm^-3   
+         nsub=      6e+16 cm^-3           nlx=          0 meter   
+       gamma1=          0 V^-1/2       gamma2=          0 V^-1/2  
+           k1=   0.517892 V^1/2            k2=  0.0428098         
+           k3=          0                 k3b=          0 V^-1    
+           w0=          0 meter          dvt0=          0         
+         dvt1=          0                dvt2=          0 V^-1    
+        dvt0w=          0 meter^-1      dvt1w=          0 meter^-1
+        dvt2w=          0 V^-1           dsub=          0         
+         eta0=-0.00046875                etab= 0.00113675 V^-1    
+           u0=  0.0098319 m^2/V/sec         ua= 9.4993e-10 m/V     
+           ub=4.95858e-19 (m/V)^2          uc=-1.5879e-10 V^-1    
+         vsat=     130813 m/sec            a1=          0 v^-1    
+           a2=        0.4               delta=       0.01 V       
+         rdsw=        530 ohm-um         prwg=          0 V^-1    
+         prwb=          0 V^-1/2           wr=          1         
+         pclm=    0.91154             pdiblc1=      1e-06         
+      pdiblc2= 0.00796875             pdiblcb=       0.01 V^-1    
+       pscbe1=    3.5e+08 V/m          pscbe2=      5e-07 V/m     
+        drout=          0                pvag=          0         
+      nfactor=          1                cdsc=          0 f/m^2   
+        cdscb=          0 f/V/m^2       cdscd=          0 f/V/m^2 
+          cit=-6.28085e-05 f/m^2        alpha0=8.93496e-07 m/V     
+        beta0=    22.6783 V               dlc=      2e-09 meter   
+          dwc=    1.5e-08 meter           clc=      1e-07 meter   
+          cle=        0.6                cgso=   3.28e-10 f/m     
+         cgdo=   3.28e-10 f/m            cgbo=2.53907e-10 f/m     
+         cgsl=          0 f/m            cgdl=          0 f/m     
+       ckappa=        0.6                  cf=          0 f/m     
+      vfbflag=          1               vfbcv=           Vfb      
+         tnom=     298.15 K               kt1=   -0.23689 V       
+         kt1l=          0                 kt2=   -0.02568         
+          ute=  -0.721369                 ua1=  1.224e-09 m/V     
+          ub1=-1.35253e-18 (m/V)^2         uc1= 7.1915e-11 m/V^2   
+           at=      10000 m/s             prt=          0         
+          using Hspice noise model           nlev=          3         
+           af=      1.252                  kf=  9.267e-24         
+       gdsnoi=-1.23457e-29         
+          using Berkeley diodes          using ACM 
+          acm=        12                 hdif=     2e-07 meter    
+         ldif=     9e-08 meter             js=  4.92e-06 amp/m^2  
+          jsw=     9e-10 amp/m            xti=         3          
+           nj=         1                   cj=  0.001121 f/m^2    
+           mj=    0.4476                   pb=  0.895226 V        
+         cjsw= 2.481e-10 f/m             mjsw=  0.368362          
+          php (not used)                  pbsw=  0.895226 V        
+       cjgate (not used)                 cjswg= 4.221e-10 f/m      
+        mjswg=  0.368362                pbswg=  0.895226 V        
+          la0=3.36968e-09               lketa=-5.83136e-10         
+        lvoff=1.55427e-10               lvth0=-8.06576e-09         
+          lk1=1.88712e-08                 lk2=-6.75856e-09         
+        leta0=2.55937e-10               letab=-5.56539e-10         
+          lu0=-1.29165e-10                 lua= -1.785e-16         
+          lub=1.37311e-25                 luc=1.95859e-17         
+        lvsat=-0.000365624               lpclm= 3.9807e-08         
+     lpdiblc2=9.14062e-10                lcit=1.18189e-10         
+         lkt1=-2.46349e-09                lkt2=-7.62232e-11         
+         lute=5.38701e-10                lub1=2.54921e-26         
+         luc1=-7.86928e-18                 wa0=-5.00175e-07         
+        wketa=8.66115e-09               wvoff=5.51816e-09         
+        wvth0=1.06796e-08                 wk1=1.44513e-07         
+          wk2=-5.28371e-08               wetab=-5.90396e-10         
+          wu0=-2.92769e-09                 wua=-7.67988e-16         
+          wub= 4.3796e-25                 wuc=2.92279e-17         
+        wpclm=-1.31009e-08                wcit=2.21978e-10         
+         wkt1=2.01412e-08                wkt2=8.08905e-09         
+         wute=1.23065e-07                wub1=-2.57544e-25         
+         wuc1=-4.96378e-17                 pa0=1.27884e-13         
+        pketa=-2.4688e-15               pvoff=-1.90571e-15         
+        pvth0=-1.7426e-15                 pk1=-2.05709e-14         
+          pk2=8.79696e-15               petab=2.65678e-16         
+          pu0=3.01257e-16                 pua=1.84541e-22         
+          pub=-1.52856e-31                 puc=-1.08196e-23         
+        ppclm= 5.8954e-15                pcit=-8.55422e-17         
+         pkt1=-2.00901e-15                pkt2=-1.55865e-15         
+         pute=1.05946e-14                pub1=3.33784e-32         
+         puc1=1.01945e-23         
+ ***************************************************************************
+ ***        model parameters  model name:   0:nmos.9   model type:nmos   ***
+ ***************************************************************************
+
+   *** general parameters ***
+    deriv=   0.           
+
+   ***  level 49  model parameters  ***
+
+       hspver=    2006.03               level=         49         
+      version=        3.1            paramchk=          0         
+       apwarn=          1                lite=          0         
+       vgslim=          0             binUnit=          2         
+       capMod=          0               xpart=          1         
+       mobMod=          1              nqsMod=          0         
+       stiMod=          0                 elm=          5         
+     sfvtflag=          0                 tox=   4.08e-09 meter   
+           xj=    1.6e-07 meter       binflag=          0         
+         lmin=    1.8e-07 meter          lmax=      5e-07 meter   
+         wmin=      6e-07 meter          wmax=    1.3e-06 meter   
+         lref=          0 meter          wref=          0 meter   
+         lint=      1e-08 meter          wint=      1e-08 meter   
+        lmult=          1               wmult=          1         
+           ll=          0                 lln=          1         
+           lw=          0                 lwn=          1         
+          lwl=          0                  wl=          0         
+          wln=          1                  ww=          0         
+          wwn=          1                 wwl=          0         
+          dwg=          0 m/V             dwb=          0 m/V^1/2 
+           xl=     -2e-08                  xw=          0         
+           a0=   0.537315                 ags=   0.038662 V^-1    
+           b0=          0 meter            b1=          0 meter   
+         keta= -0.0271242 V^-1           voff=  -0.127665 V       
+        ngate=          0 cm^-3           vbx=          0 V       
+          vbm=         -3 V                xt=   1.55e-07 meter   
+         vth0=   0.481488 V               nch=    3.9e+17 cm^-3   
+         nsub=      6e+16 cm^-3           nlx=          0 meter   
+       gamma1=          0 V^-1/2       gamma2=          0 V^-1/2  
+           k1=   0.489195 V^1/2            k2=  0.0302083         
+           k3=          0                 k3b=          0 V^-1    
+           w0=          0 meter          dvt0=          0         
+         dvt1=          0                dvt2=          0 V^-1    
+        dvt0w=          0 meter^-1      dvt1w=          0 meter^-1
+        dvt2w=          0 V^-1           dsub=          0         
+         eta0=-0.000319895                etab= 0.00141958 V^-1    
+           u0=  0.0402262 m^2/V/sec         ua=-5.06629e-10 m/V     
+           ub=1.98404e-18 (m/V)^2          uc=7.19122e-11 V^-1    
+         vsat=      84638 m/sec            a1=          0 v^-1    
+           a2=       0.99               delta=       0.01 V       
+         rdsw=        170 ohm-um         prwg=          0 V^-1    
+         prwb=          0 V^-1/2           wr=          1         
+         pclm=   0.974078             pdiblc1=      1e-06         
+      pdiblc2=-0.00352996             pdiblcb=       0.01 V^-1    
+       pscbe1=      4e+08 V/m          pscbe2=      1e-06 V/m     
+        drout=          0                pvag=          0         
+      nfactor=          1                cdsc=          0 f/m^2   
+        cdscb=          0 f/V/m^2       cdscd=          0 f/V/m^2 
+          cit=0.000212728 f/m^2        alpha0=6.27411e-08 m/V     
+        beta0=    11.5926 V               dlc=      3e-09 meter   
+          dwc=      1e-08 meter           clc=      1e-07 meter   
+          cle=        0.6                cgso=  3.665e-10 f/m     
+         cgdo=  3.665e-10 f/m            cgbo=1.69271e-10 f/m     
+         cgsl=          0 f/m            cgdl=          0 f/m     
+       ckappa=        0.6                  cf=          0 f/m     
+      vfbflag=          1               vfbcv=           Vfb      
+         tnom=     298.15 K               kt1=  -0.229962 V       
+         kt1l=          0                 kt2= -0.0266069         
+          ute=   -1.09423                 ua1=  1.224e-09 m/V     
+          ub1=-5.72266e-20 (m/V)^2         uc1=1.07224e-10 m/V^2   
+           at=      20000 m/s             prt=          0         
+          using Hspice noise model           nlev=          3         
+           af=     0.8256                  kf=  9.326e-25         
+       gdsnoi=-1.23457e-29         
+          using Berkeley diodes          using ACM 
+          acm=        12                 hdif=     2e-07 meter    
+         ldif=     9e-08 meter             js=  8.38e-06 amp/m^2  
+          jsw=   1.6e-11 amp/m            xti=         3          
+           nj=         1                   cj=0.00100027 f/m^2    
+           mj=  0.359526                   pb=  0.688268 V        
+         cjsw=2.04055e-10 f/m             mjsw=  0.200388          
+          php (not used)                  pbsw=  0.688268 V        
+       cjgate (not used)                 cjswg=3.34055e-10 f/m      
+        mjswg=   0.43879                pbswg=  0.688268 V        
+          la0=7.70576e-08                lags=-8.58453e-09         
+        lketa=1.74823e-09               lvoff=1.25262e-10         
+        lvth0=1.17523e-08                 lk1=4.81689e-08         
+          lk2=-2.01106e-08               leta0=1.93152e-10         
+        letab=-6.99008e-10                 lu0=5.93101e-10         
+          lua=-5.57622e-17                 lub=4.98852e-26         
+          luc= 1.4583e-17               lvsat=-0.000214613         
+        lpclm=7.36956e-08            lpdiblc2=4.38378e-09         
+         lcit=1.32145e-10                lkt1=1.96142e-09         
+         lkt2=-3.8262e-10                lute=-6.90251e-08         
+         lub1=-1.25675e-25                luc1=-1.73487e-17         
+          wa0=1.30595e-07                wags=-1.48739e-09         
+        wketa= 2.6193e-09               wvoff=5.07278e-09         
+        wvth0=-7.08287e-09                 wk1=-1.67354e-08         
+          wk2=6.03103e-10               weta0=3.34662e-11         
+        wetab=-4.10648e-11                 wu0=-5.3854e-10         
+          wua=-4.33874e-17                 wub=-2.70012e-26         
+          wuc=-3.70653e-19               wvsat= 0.00102339         
+        wpclm=2.15571e-07            wpdiblc2=-1.24165e-09         
+         wcit=4.29079e-11                wkt1=1.35353e-09         
+         wkt2=-5.18998e-09                wute=-4.79964e-07         
+         wub1=-1.6086e-24                wuc1=-1.51157e-16         
+          pa0=-6.5749e-14                pags=6.84198e-16         
+        pketa=-9.2443e-16               pvoff=-2.82134e-15         
+        pvth0=-3.06996e-15                 pk1=-4.58442e-15         
+          pk2=5.86799e-16               peta0=-1.53945e-17         
+        petab=1.88899e-17                 pu0=5.67927e-16         
+          pua=2.41873e-23                 pub=-5.53558e-32         
+          puc=-1.43013e-23               pvsat= 1.7105e-11         
+        ppclm=-1.59003e-15            ppdiblc2=5.71157e-16         
+         pcit=-1.97376e-17                pkt1=1.96549e-15         
+         pkt2=1.22725e-15                pute=6.18456e-14         
+         pub1=2.30668e-31                puc1=3.17331e-23         
+ 
+
+  
+             
+ Warning:'No DC path nodes' occurs 1 times
+ No DC path from the following nodes,connected with gdcpath:
+ -----------------------
+ |Node      |Subckt    |
+ |----------+----------|
+ |x1.t51    |mult8     |
+ -----------------------
+              
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 79
+ file=C:\Users\IDEAL\Desktop\CA4\Q2_2\Q2_2.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ 
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+      node    =voltage        node    =voltage        node    =voltage
+
+ +  0:a0      =   1.8000    0:a1      =   1.8000    0:a2      =   0.     
+ +  0:a3      =   0.        0:a4      =   0.        0:a5      =   0.     
+ +  0:a6      =   0.        0:a7      =   0.        0:b0      =   0.     
+ +  0:b1      =   1.8000    0:b2      =   0.        0:b3      =   0.     
+ +  0:b4      =   0.        0:b5      =   0.        0:b6      =   0.     
+ +  0:b7      =   0.        0:s0      =  12.4532m   0:s1      =   1.8000 
+ +  0:s10     =   6.4601n   0:s11     =   1.7451    0:s12     =   8.2591m
+ +  0:s13     =   1.7964    0:s14     =   6.4601n   0:s15     =  12.4532m
+ +  0:s2      =  12.4532m   0:s3      =   1.8000    0:s4      =  12.4532m
+ +  0:s5      =   1.8000    0:s6      =  12.4532m   0:s7      =   1.8000 
+ +  0:s8      =  12.4532m   0:s9      =   1.7268    0:vdd     =   1.8000 
+ +  0:vss     =   0.        1:pp01    =   6.4601n   1:pp02    =  12.4532m
+ +  1:pp03    =  12.4532m   1:pp04    =  12.4532m   1:pp05    =  12.4532m
+ +  1:pp06    =  12.4532m   1:pp07    =  12.4532m   1:pp10    =  12.4532m
+ +  1:pp11    =   6.4601n   1:pp12    =  12.4532m   1:pp13    =  12.4532m
+ +  1:pp14    =  12.4532m   1:pp15    =  12.4532m   1:pp16    =  12.4532m
+ +  1:pp17    =  12.4532m   1:pp20    =   1.8000    1:pp21    =   1.7268 
+ +  1:pp22    =   1.8000    1:pp23    =   1.8000    1:pp24    =   1.8000 
+ +  1:pp25    =   1.8000    1:pp26    =   1.8000    1:pp27    =   1.8000 
+ +  1:pp30    =   1.8000    1:pp31    =   1.7268    1:pp32    =   1.8000 
+ +  1:pp33    =   1.8000    1:pp34    =   1.8000    1:pp35    =   1.8000 
+ +  1:pp36    =   1.8000    1:pp37    =   1.8000    1:pp40    =   1.8000 
+ +  1:pp41    =   1.7268    1:pp42    =   1.8000    1:pp43    =   1.8000 
+ +  1:pp44    =   1.8000    1:pp45    =   1.8000    1:pp46    =   1.8000 
+ +  1:pp47    =   1.8000    1:pp50    =   1.8000    1:pp51    =   1.7268 
+ +  1:pp52    =   1.8000    1:pp53    =   1.8000    1:pp54    =   1.8000 
+ +  1:pp55    =   1.8000    1:pp56    =   1.8000    1:pp57    =   1.8000 
+ +  1:pp60    =   1.8000    1:pp61    =   1.7268    1:pp62    =   1.8000 
+ +  1:pp63    =   1.8000    1:pp64    =   1.8000    1:pp65    =   1.8000 
+ +  1:pp66    =   1.8000    1:pp67    =   1.8000    1:pp70    =   1.8000 
+ +  1:pp71    =   1.7268    1:pp72    =   1.8000    1:pp73    =   1.8000 
+ +  1:pp74    =   1.8000    1:pp75    =   1.8000    1:pp76    =   1.8000 
+ +  1:pp77    =   1.8000    1:t1      =   1.7268    1:t10     =   1.7964 
+ +  1:t11     =   1.7451    1:t12     =   8.2590m   1:t13     =   9.4577m
+ +  1:t14     =   6.4601n   1:t15     =  12.4532m   1:t16     =   1.7268 
+ +  1:t17     =   1.7963    1:t18     =   6.4601n   1:t19     =  12.4532m
+ +  1:t2      =   1.8000    1:t20     =   6.4848n   1:t21     =  12.4532m
+ +  1:t22     =  12.4532m   1:t23     =   8.2591m   1:t24     =   6.4601n
+ +  1:t25     =  12.4532m   1:t26     =   6.4848n   1:t27     =  12.4532m
+ +  1:t28     =   6.4601n   1:t29     =  12.4532m   1:t3      =   1.7268 
+ +  1:t30     =   6.4601n   1:t31     =  12.4532m   1:t32     =   6.4601n
+ +  1:t33     =  12.4532m   1:t34     =   6.4601n   1:t35     =  12.4532m
+ +  1:t36     =   6.4601n   1:t37     =  12.4532m   1:t38     =   8.2591m
+ +  1:t39     =   8.2590m   1:t4      =   1.7964    1:t40     =   9.4577m
+ +  1:t41     =   6.4601n   1:t42     =  12.4532m   1:t43     =   6.4613n
+ +  1:t44     =  12.4532m   1:t45     =  12.4532m   1:t46     =   8.2591m
+ +  1:t47     =   1.8000    1:t48     =   1.7268    1:t49     =   1.8000 
+ +  1:t5      =   1.7451    1:t50     =   1.8000    1:t51     =   0.     
+ +  1:t52     =   1.7268    1:t53     =   1.8000    1:t54     =   1.7268 
+ +  1:t55     =   1.7268    1:t56     =   1.7964    1:t57     =   1.7268 
+ +  1:t58     =   1.7964    1:t59     =   1.7268    1:t6      =   1.7964 
+ +  1:t60     =   1.8000    1:t61     =   1.7268    1:t62     =   1.7963 
+ +  1:t63     =   1.7451    1:t64     =   8.2590m   1:t65     =   9.4577m
+ +  1:t66     =   1.8000    1:t67     =   1.7268    1:t68     =  12.4532m
+ +  1:t69     =   8.2591m   1:t7      =   1.7451    1:t70     =   6.4601n
+ +  1:t71     =  12.4532m   1:t72     =  12.4532m   1:t73     =   8.2591m
+ +  1:t74     =   8.2591m   1:t75     =   8.2590m   1:t76     =   9.4577m
+ +  1:t77     =   9.4577m   1:t78     =   9.0962m   1:t79     =   6.4601n
+ +  1:t8      =   1.8000    1:t80     =  12.4532m   1:t81     =   1.8000 
+ +  1:t82     =   1.7268    1:t83     =   1.7964    1:t84     =   1.7451 
+ +  1:t85     =   1.7268    1:t86     =   1.8000    1:t87     =   1.7268 
+ +  1:t88     =   1.8000    1:t89     =   1.7268    1:t9      =   1.7268 
+ +  1:t90     =   8.2591m   1:t91     =   1.7268    1:t92     =   8.2591m
+ +  1:t93     =   1.7963    1:t94     =  12.4532m   1:t95     =   1.7935 
+ +  1:t96     =   9.4577m   1:t97     =   1.7451    2:n1      =   5.5173n
+ +  3:n1      =   5.5301n   4:n1      =   5.5173n   5:n1      =   5.5173n
+ +  6:n1      =   5.5173n   7:n1      =   5.5173n   8:n1      =   5.5173n
+ +  9:n1      =   5.5173n  10:n1      =   5.5173n  11:n1      =   5.5301n
+ + 12:n1      =   5.5173n  13:n1      =   5.5173n  14:n1      =   5.5173n
+ + 15:n1      =   5.5173n  16:n1      =   5.5173n  17:n1      =   5.5173n
+ + 18:n1      =   1.8000   19:n1      =   1.8000   20:n1      =   1.8000 
+ + 21:n1      =   1.8000   22:n1      =   1.8000   23:n1      =   1.8000 
+ + 24:n1      =   1.8000   25:n1      =   1.8000   26:n1      =   1.8000 
+ + 27:n1      =   1.8000   28:n1      =   1.8000   29:n1      =   1.8000 
+ + 30:n1      =   1.8000   31:n1      =   1.8000   32:n1      =   1.8000 
+ + 33:n1      =   1.8000   34:n1      =   1.8000   35:n1      =   1.8000 
+ + 36:n1      =   1.8000   37:n1      =   1.8000   38:n1      =   1.8000 
+ + 39:n1      =   1.8000   40:n1      =   1.8000   41:n1      =   1.8000 
+ + 42:n1      =   1.8000   43:n1      =   1.8000   44:n1      =   1.8000 
+ + 45:n1      =   1.8000   46:n1      =   1.8000   47:n1      =   1.8000 
+ + 48:n1      =   1.8000   49:n1      =   1.8000   50:n1      =   1.8000 
+ + 51:n1      =   1.8000   52:n1      =   1.8000   53:n1      =   1.8000 
+ + 54:n1      =   1.8000   55:n1      =   1.8000   56:n1      =   1.8000 
+ + 57:n1      =   1.8000   58:n1      =   1.8000   59:n1      =   1.8000 
+ + 60:n1      =   1.8000   61:n1      =   1.8000   62:n1      =   1.8000 
+ + 63:n1      =   1.8000   64:n1      =   1.8000   65:n1      =   1.8000 
+ + 66:ab_n    =   1.8000   66:abbc_n  =   6.4601n  66:ac_n    =   1.8000 
+ + 66:bc_n    =   1.8000   66:s_n     =   6.4601n  67:ab_n    =   1.7268 
+ + 67:abbc_n  =   8.2591m  67:ac_n    =   1.8000   67:bc_n    =  12.4532m
+ + 67:s_n     =  21.3380n  68:ab_n    =   1.7268   68:abbc_n  =  12.4532m
+ + 68:ac_n    =   1.7964   68:bc_n    =   6.4848n  68:s_n     =  21.3391n
+ + 69:ab_n    =   1.7268   69:abbc_n  =  12.4532m  69:ac_n    =   1.7964 
+ + 69:bc_n    =   6.4848n  69:s_n     =  21.3391n  70:ab_n    =   1.7268 
+ + 70:abbc_n  =   8.2591m  70:ac_n    =   1.8000   70:bc_n    =  12.4532m
+ + 70:s_n     =  21.3195n  71:ab_n    =   1.7268   71:abbc_n  =  12.4532m
+ + 71:ac_n    =   1.7964   71:bc_n    =   6.4848n  71:s_n     =  21.3391n
+ + 72:ab_n    =   6.4601n  72:abbc_n  =   1.8000   72:ac_n    =   8.2590m
+ + 72:bc_n    =   8.2590m  72:s_n     =   1.8000   73:ab_n    =   6.4601n
+ + 73:abbc_n  =   1.8000   73:ac_n    =   6.4601n  73:bc_n    =   6.4601n
+ + 73:s_n     =   1.8000   74:ab_n    =   1.7964   74:abbc_n  =  12.4532m
+ + 74:ac_n    =   1.7268   74:bc_n    =  21.3159n  74:s_n     =   6.7007n
+ + 75:ab_n    =   6.4601n  75:abbc_n  =   1.8000   75:ac_n    =   6.4601n
+ + 75:bc_n    =   6.4601n  75:s_n     =   1.8000   76:ab_n    =   8.2590m
+ + 76:abbc_n  =   1.7451   76:ac_n    =   6.4848n  76:bc_n    =   1.7964 
+ + 76:s_n     =   1.8000   77:ab_n    =   8.2590m  77:abbc_n  =   1.7268 
+ + 77:ac_n    =  12.4532m  77:bc_n    =   1.8000   77:s_n     =   1.8000 
+ + 78:ab_n    =   6.4601n  78:abbc_n  =   1.8000   78:ac_n    =   6.4601n
+ + 78:bc_n    =   6.4601n  78:s_n     =   1.8000   79:ab_n    =   8.2590m
+ + 79:abbc_n  =   1.7451   79:ac_n    =   6.4848n  79:bc_n    =   1.7964 
+ + 79:s_n     =   1.8000   80:ab_n    =   6.4601n  80:abbc_n  =   1.8000 
+ + 80:ac_n    =   6.4601n  80:bc_n    =   6.4601n  80:s_n     =   1.8000 
+ + 81:ab_n    =   6.4601n  81:abbc_n  =   1.8000   81:ac_n    =   6.4601n
+ + 81:bc_n    =   6.4601n  81:s_n     =   1.8000   82:ab_n    =   6.4601n
+ + 82:abbc_n  =   1.8000   82:ac_n    =   6.4601n  82:bc_n    =   6.4601n
+ + 82:s_n     =   1.8000   83:ab_n    =   6.4601n  83:abbc_n  =   1.8000 
+ + 83:ac_n    =   6.4601n  83:bc_n    =   6.4601n  83:s_n     =   1.8000 
+ + 84:ab_n    =   6.4601n  84:abbc_n  =   1.8000   84:ac_n    =   6.4601n
+ + 84:bc_n    =   6.4601n  84:s_n     =   1.8000   85:ab_n    =  21.3250n
+ + 85:abbc_n  =   1.8000   85:ac_n    =  12.4532m  85:bc_n    =  12.4532m
+ + 85:s_n     =   1.8000   86:ab_n    =  21.3367n  86:abbc_n  =   1.8000 
+ + 86:ac_n    =   8.2591m  86:bc_n    =   8.2590m  86:s_n     =   1.8000 
+ + 87:ab_n    =  14.2551n  87:abbc_n  =   1.8000   87:ac_n    =  14.2539n
+ + 87:bc_n    =   6.6761n  87:s_n     =   1.8000   88:ab_n    =  14.2759n
+ + 88:abbc_n  =   1.8000   88:ac_n    =  14.2524n  88:bc_n    =  21.3241n
+ + 88:s_n     =   1.8000   89:ab_n    =   9.0962m  89:abbc_n  =   1.7269 
+ + 89:ac_n    =  12.4532m  89:bc_n    =   1.8000   89:s_n     =   1.8000 
+ + 90:ab_n    =   1.7451   90:abbc_n  =   8.2591m  90:ac_n    =   1.8000 
+ + 90:bc_n    =  12.4532m  90:s_n     =  14.2474n  91:ab_n    =   1.8000 
+ + 91:abbc_n  =   6.4601n  91:ac_n    =   1.8000   91:bc_n    =   1.8000 
+ + 91:s_n     =   6.4601n  92:ab_n    =   1.8000   92:abbc_n  =   6.4601n
+ + 92:ac_n    =   1.8000   92:bc_n    =   1.8000   92:s_n     =   6.4601n
+ + 93:ab_n    =   1.8000   93:abbc_n  =   6.4601n  93:ac_n    =   1.8000 
+ + 93:bc_n    =   1.8000   93:s_n     =   6.4601n  94:ab_n    =   1.8000 
+ + 94:abbc_n  =   6.4848n  94:ac_n    =   1.7268   94:bc_n    =   1.7268 
+ + 94:s_n     =   6.4848n  95:ab_n    =   1.7268   95:abbc_n  =  12.4532m
+ + 95:ac_n    =   1.7268   95:bc_n    =   6.4601n  95:s_n     =  21.3586n
+ + 96:ab_n    =   1.8000   96:abbc_n  =   6.4601n  96:ac_n    =   1.8000 
+ + 96:bc_n    =   1.8000   96:s_n     =   6.4601n  97:ab_n    =   1.8000 
+ + 97:abbc_n  =   6.4601n  97:ac_n    =   1.8000   97:bc_n    =   1.8000 
+ + 97:s_n     =   6.4601n  98:ab_n    =   1.8000   98:abbc_n  =   6.4613n
+ + 98:ac_n    =   1.7963   98:bc_n    =   1.7963   98:s_n     =   6.4613n
+ + 99:ab_n    =  12.4532m  99:abbc_n  =   1.7268   99:ac_n    =   8.2590m
+ + 99:bc_n    =   1.8000   99:s_n     =   1.8000  100:ab_n    =   1.7268 
+ +100:abbc_n  =   8.2591m 100:ac_n    =   1.8000  100:bc_n    =  12.4532m
+ +100:s_n     =  21.3193n 101:ab_n    =  12.4532m 101:abbc_n  =   1.7268 
+ +101:ac_n    =  12.4532m 101:bc_n    =   1.8000  101:s_n     =   1.8000 
+ +102:ab_n    =   6.4601n 102:abbc_n  =   1.8000  102:ac_n    =   6.4601n
+ +102:bc_n    =   6.4601n 102:s_n     =   1.8000  103:ab_n    =   8.2591m
+ +103:abbc_n  =   1.7268  103:ac_n    =  12.4532m 103:bc_n    =   1.8000 
+ +103:s_n     =   1.8000  104:ab_n    =   9.0962m 104:abbc_n  =   1.7268 
+ +104:ac_n    =  12.4532m 104:bc_n    =   1.8000  104:s_n     =   1.8000 
+ +105:ab_n    =  21.3016n 105:abbc_n  =   1.8000  105:ac_n    =   8.2591m
+ +105:bc_n    =   8.2590m 105:s_n     =   1.8000  106:ab_n    =   9.4577m
+ +106:abbc_n  =   1.7268  106:ac_n    =   9.4577m 106:bc_n    =   1.8000 
+ +106:s_n     =   1.8000  107:ab_n    =  21.3060n 107:abbc_n  =   1.8000 
+ +107:ac_n    =  21.3060n 107:bc_n    =   6.4601n 107:s_n     =   1.8000 
+ +108:ab_n    =   1.8000  108:abbc_n  =   6.4601n 108:ac_n    =   1.8000 
+ +108:bc_n    =   1.8000  108:s_n     =   6.4601n 109:ab_n    =   1.7964 
+ +109:abbc_n  =  12.4532m 109:ac_n    =   1.7964  109:bc_n    =  21.3258n
+ +109:s_n     =   6.6774n 110:ab_n    =   1.7268  110:abbc_n  =   8.2591m
+ +110:ac_n    =   1.8000  110:bc_n    =  12.4532m 110:s_n     =  21.3252n
+ +111:ab_n    =   1.8000  111:abbc_n  =   6.4601n 111:ac_n    =   1.8000 
+ +111:bc_n    =   1.8000  111:s_n     =   6.4601n 112:ab_n    =   1.7964 
+ +112:abbc_n  =   9.4577m 112:ac_n    =   1.8000  112:bc_n    =   8.2591m
+ +112:s_n     =   6.6762n 113:ab_n    =   9.4577m 113:abbc_n  =   1.7268 
+ +113:ac_n    =  12.4532m 113:bc_n    =   1.8000  113:s_n     =   1.8000 
+ +114:ab_n    =   1.8000  114:abbc_n  =   6.4601n 114:ac_n    =   1.8000 
+ +114:bc_n    =   1.8000  114:s_n     =   6.4601n 115:ab_n    =  21.3023n
+ +115:abbc_n  =   1.8000  115:ac_n    =  12.4532m 115:bc_n    =  12.4532m
+ +115:s_n     =   1.8000  116:ab_n    =   1.7964  116:abbc_n  =  12.4532m
+ +116:ac_n    =   1.7268  116:bc_n    =  21.3162n 116:s_n     =   6.7007n
+ +117:ab_n    =   6.7010n 117:abbc_n  =   1.8000  117:ac_n    =   6.6763n
+ +117:bc_n    =  21.3259n 117:s_n     =   1.8000  118:ab_n    =   1.7964 
+ +118:abbc_n  =  12.4532m 118:ac_n    =   1.7451  118:bc_n    =  21.3230n
+ +118:s_n     =   6.6941n 119:ab_n    =   6.8806n 119:abbc_n  =   1.8000 
+ +119:ac_n    =   8.2591m 119:bc_n    =   8.2591m 119:s_n     =   1.8000 
+ +120:ab_n    =   1.8000  120:abbc_n  =   6.4613n 120:ac_n    =   1.7964 
+ +120:bc_n    =   1.7964  120:s_n     =   6.4613n 121:ab_n    =  14.2597n
+ +121:abbc_n  =   1.8000  121:ac_n    =  14.2585n 121:bc_n    =   6.6760n
+ +121:s_n     =   1.8000  122:n1      =   1.8000  123:n1      =   1.8000 
+ +124:n1      =   1.8000  125:n1      =   5.5301n 126:n1      =   5.5301n
+ +127:n1      =   1.8000  128:n1      =   1.8000  129:n1      =   1.8000 
+ +130:n1      =   1.8000  131:n1      =   5.5173n 132:n1      =  20.4080n
+ +133:n1      =  20.3992n 134:n1      =   1.8000  135:n1      =   1.8000 
+ +136:n1      =   1.8000  137:n1      =   1.8000  138:n1      =   5.5301n
+ +139:n1      =  20.4080n 140:n1      =  20.3948n 141:n1      =   1.8000 
+ +142:n1      =   1.8000  143:n1      =   1.8000  144:n1      =   1.8000 
+ +145:n1      =   5.5301n 146:n1      =  20.4080n 147:n1      =  20.3948n
+ +148:n1      =   1.8000  149:n1      =   1.8000  150:n1      =   1.8000 
+ +151:n1      =   1.8000  152:n1      =   5.5173n 153:n1      =  20.3895n
+ +154:n1      =  20.3808n 155:n1      =   1.8000  156:n1      =   1.8000 
+ +157:n1      =   1.8000  158:n1      =   1.8000  159:n1      =   5.5301n
+ +160:n1      =  20.4080n 161:n1      =  20.3948n 162:n1      =   1.8000 
+ +163:n1      =   1.8000  164:n1      =   5.5301n 165:n1      =   5.5216n
+ +166:n1      =   5.5216n 167:n1      =   1.8000  168:n1      =   1.8000 
+ +169:n1      =   5.5216n 170:n1      =   5.5204n 171:n1      =   5.5301n
+ +172:n1      =   5.5301n 173:n1      =   5.5301n 174:n1      =   1.8000 
+ +175:n1      =   1.8000  176:n1      =   5.5301n 177:n1      =   5.5173n
+ +178:n1      =   1.8000  179:n1      =   1.8000  180:n1      =  20.3859n
+ +181:n1      =   5.7461n 182:n1      =   5.7332n 183:n1      =   1.8000 
+ +184:n1      =   1.8000  185:n1      =   5.5301n 186:n1      =   5.5301n
+ +187:n1      =   5.5301n 188:n1      =   1.8000  189:n1      =   1.8000 
+ +190:n1      =   5.5301n 191:n1      =   5.5173n 192:n1      =   5.5216n
+ +193:n1      =   5.5301n 194:n1      =   1.8000  195:n1      =   1.8000 
+ +196:n1      =   1.8000  197:n1      =   5.5301n 198:n1      =  13.3123n
+ +199:n1      =   5.5216n 200:n1      =   5.5173n 201:n1      =   1.8000 
+ +202:n1      =   1.8000  203:n1      =   1.8000  204:n1      =   5.5173n
+ +205:n1      =  20.3707n 206:n1      =   5.5301n 207:n1      =   5.5301n
+ +208:n1      =   5.5301n 209:n1      =   1.8000  210:n1      =   1.8000 
+ +211:n1      =   5.5301n 212:n1      =   5.5173n 213:n1      =   5.5216n
+ +214:n1      =   5.5301n 215:n1      =   1.8000  216:n1      =   1.8000 
+ +217:n1      =   1.8000  218:n1      =   5.5301n 219:n1      =  13.3123n
+ +220:n1      =   5.5301n 221:n1      =   5.5301n 222:n1      =   5.5301n
+ +223:n1      =   1.8000  224:n1      =   1.8000  225:n1      =   5.5301n
+ +226:n1      =   5.5173n 227:n1      =   5.5301n 228:n1      =   5.5301n
+ +229:n1      =   5.5301n 230:n1      =   1.8000  231:n1      =   1.8000 
+ +232:n1      =   5.5301n 233:n1      =   5.5173n 234:n1      =   5.5301n
+ +235:n1      =   5.5301n 236:n1      =   5.5301n 237:n1      =   1.8000 
+ +238:n1      =   1.8000  239:n1      =   5.5301n 240:n1      =   5.5173n
+ +241:n1      =   5.5301n 242:n1      =   5.5301n 243:n1      =   5.5301n
+ +244:n1      =   1.8000  245:n1      =   1.8000  246:n1      =   5.5301n
+ +247:n1      =   5.5173n 248:n1      =   5.5301n 249:n1      =   5.5301n
+ +250:n1      =   5.5301n 251:n1      =   1.8000  252:n1      =   1.8000 
+ +253:n1      =   5.5301n 254:n1      =   5.5173n 255:n1      =  20.3950n
+ +256:n1      =  20.3818n 257:n1      =   5.5173n 258:n1      =   1.8000 
+ +259:n1      =   1.8000  260:n1      =   5.5173n 261:n1      =   5.5216n
+ +262:n1      =  20.4056n 263:n1      =  20.3968n 264:n1      =   5.7375n
+ +265:n1      =   1.8000  266:n1      =   1.8000  267:n1      =   5.5216n
+ +268:n1      =   5.5204n 269:n1      =  13.3239n 270:n1      =  13.3239n
+ +271:n1      =   5.7461n 272:n1      =   1.8000  273:n1      =   1.8000 
+ +274:n1      =   5.5301n 275:n1      =   5.5173n 276:n1      =  13.3213n
+ +277:n1      =  13.3213n 278:n1      =  20.3929n 279:n1      =   1.8000 
+ +280:n1      =   1.8000  281:n1      =   5.5301n 282:n1      =   5.5173n
+ +283:n1      =  13.3117n 284:n1      =  13.3082n 285:n1      =   1.8000 
+ +286:n1      =   1.8000  287:n1      =   1.8000  288:n1      =   5.5173n
+ +289:n1      =  20.3516n 290:n1      =   1.8000  291:n1      =   1.8000 
+ +292:n1      =   5.7335n 293:n1      =  13.3173n 294:n1      =  13.3087n
+ +295:n1      =   1.8000  296:n1      =   1.8000  297:n1      =   1.8000 
+ +298:n1      =   1.8000  299:n1      =   1.8000  300:n1      =   5.5301n
+ +301:n1      =   5.5301n 302:n1      =   1.8000  303:n1      =   1.8000 
+ +304:n1      =   1.8000  305:n1      =   1.8000  306:n1      =   1.8000 
+ +307:n1      =   5.5301n 308:n1      =   5.5301n 309:n1      =   1.8000 
+ +310:n1      =   1.8000  311:n1      =   1.8000  312:n1      =   1.8000 
+ +313:n1      =   1.8000  314:n1      =   5.5301n 315:n1      =   5.5301n
+ +316:n1      =   1.8000  317:n1      =   1.8000  318:n1      =   1.8000 
+ +319:n1      =   1.8000  320:n1      =   1.8000  321:n1      =   5.5301n
+ +322:n1      =   5.5301n 323:n1      =   1.8000  324:n1      =   1.8000 
+ +325:n1      =   1.8000  326:n1      =   1.8000  327:n1      =   5.5301n
+ +328:n1      =  20.4040n 329:n1      =  20.3908n 330:n1      =   1.8000 
+ +331:n1      =   1.8000  332:n1      =   1.8000  333:n1      =   1.8000 
+ +334:n1      =   1.8000  335:n1      =   5.5301n 336:n1      =   5.5301n
+ +337:n1      =   1.8000  338:n1      =   1.8000  339:n1      =   1.8000 
+ +340:n1      =   1.8000  341:n1      =   1.8000  342:n1      =   5.5301n
+ +343:n1      =   5.5301n 344:n1      =   1.8000  345:n1      =   1.8000 
+ +346:n1      =   1.8000  347:n1      =   1.8000  348:n1      =   1.8000 
+ +349:n1      =   5.5301n 350:n1      =   5.5301n 351:n1      =   1.8000 
+ +352:n1      =   1.8000  353:n1      =   5.5173n 354:n1      =   5.5216n
+ +355:n1      =   1.8000  356:n1      =   1.8000  357:n1      =   1.8000 
+ +358:n1      =   5.5216n 359:n1      =  20.3925n 360:n1      =   1.8000 
+ +361:n1      =   1.8000  362:n1      =   5.5173n 363:n1      =  20.3893n
+ +364:n1      =  20.3806n 365:n1      =   1.8000  366:n1      =   1.8000 
+ +367:n1      =   5.5173n 368:n1      =   5.5173n 369:n1      =   1.8000 
+ +370:n1      =   1.8000  371:n1      =   1.8000  372:n1      =   5.5173n
+ +373:n1      =  20.3862n 374:n1      =   5.5301n 375:n1      =   5.5301n
+ +376:n1      =   5.5301n 377:n1      =   1.8000  378:n1      =   1.8000 
+ +379:n1      =   5.5301n 380:n1      =   5.5173n 381:n1      =   5.7377n
+ +382:n1      =   5.7333n 383:n1      =   1.8000  384:n1      =   1.8000 
+ +385:n1      =   1.8000  386:n1      =   5.5173n 387:n1      =  20.3908n
+ +388:n1      =  20.3711n 389:n1      =  20.3675n 390:n1      =   1.8000 
+ +391:n1      =   1.8000  392:n1      =   1.8000  393:n1      =   5.5173n
+ +394:n1      =  20.3855n 395:n1      =  20.3704n 396:n1      =  20.3617n
+ +397:n1      =   5.7378n 398:n1      =   1.8000  399:n1      =   1.8000 
+ +400:n1      =   5.5216n 401:n1      =   5.5204n 402:n1      =  13.3048n
+ +403:n1      =  13.3048n 404:n1      =   1.8000  405:n1      =   1.8000 
+ +406:n1      =   1.8000  407:n1      =   5.5204n 408:n1      =  20.3853n
+ +409:n1      =  20.3760n 410:n1      =  20.3760n 411:n1      =   5.5301n
+ +412:n1      =   1.8000  413:n1      =   1.8000  414:n1      =   5.5301n
+ +415:n1      =   5.5173n 416:n1      =   1.8000  417:n1      =   1.8000 
+ +418:n1      =   1.8000  419:n1      =   5.5301n 420:n1      =   5.5301n
+ +421:n1      =   1.8000  422:n1      =   1.8000  423:n1      =   1.8000 
+ +424:n1      =   1.8000  425:n1      =  20.3712n 426:n1      =   5.7463n
+ +427:n1      =   5.7334n 428:n1      =   1.8000  429:n1      =   1.8000 
+ +430:n1      =   1.8000  431:n1      =   1.8000  432:n1      =   5.5173n
+ +433:n1      =  20.3952n 434:n1      =  20.3865n 435:n1      =   1.8000 
+ +436:n1      =   1.8000  437:n1      =   1.8000  438:n1      =   1.8000 
+ +439:n1      =   1.8000  440:n1      =   5.5301n 441:n1      =   5.5301n
+ +442:n1      =   1.8000  443:n1      =   1.8000  444:n1      =   1.8000 
+ +445:n1      =   1.8000  446:n1      =  20.3695n 447:n1      =   5.7462n
+ +448:n1      =   5.7364n 449:n1      =   1.8000  450:n1      =   1.8000 
+ +451:n1      =  20.3699n 452:n1      =  20.3667n 453:n1      =   1.8000 
+ +454:n1      =   1.8000  455:n1      =   1.8000  456:n1      =   5.5173n
+ +457:n1      =  20.3849n 458:n1      =   1.8000  459:n1      =   1.8000 
+ +460:n1      =   1.8000  461:n1      =   5.5301n 462:n1      =   5.5301n
+ +463:n1      =   1.8000  464:n1      =   1.8000  465:n1      =  20.3723n
+ +466:n1      =  20.3591n 467:n1      =   5.5173n 468:n1      =   1.8000 
+ +469:n1      =   1.8000  470:n1      =   5.5173n 471:n1      =   5.5216n
+ +472:n1      =   1.8000  473:n1      =   1.8000  474:n1      =  20.3862n
+ +475:n1      =   5.7461n 476:n1      =   5.7332n 477:n1      =   1.8000 
+ +478:n1      =   1.8000  479:n1      =   5.7463n 480:n1      =   5.7463n
+ +481:n1      =  20.3959n 482:n1      =   1.8000  483:n1      =   1.8000 
+ +484:n1      =   5.5301n 485:n1      =   5.5173n 486:n1      =   1.8000 
+ +487:n1      =   1.8000  488:n1      =  20.3918n 489:n1      =   5.7460n
+ +490:n1      =   5.7331n 491:n1      =   1.8000  492:n1      =   1.8000 
+ +493:n1      =   5.9325n 494:n1      =   5.9239n 495:n1      =  13.3073n
+ +496:n1      =   1.8000  497:n1      =   1.8000  498:n1      =   5.5216n
+ +499:n1      =   5.5204n 500:n1      =   1.8000  501:n1      =   1.8000 
+ +502:n1      =   1.8000  503:n1      =   5.5301n 504:n1      =   5.5301n
+ +505:n1      =   1.8000  506:n1      =   1.8000  507:n1      =  13.3285n
+ +508:n1      =  13.3285n 509:n1      =   5.7460n 510:n1      =   1.8000 
+ +511:n1      =   1.8000  512:n1      =   5.5301n 513:n1      =   5.5173n
+
+ ******
+ 
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+x
+
+ time         voltage    voltage    voltage    voltage   
+             b7         b6         b5         b4         
+    0.          0.         0.         0.         0.      
+    1.00000n    0.         0.         0.         0.      
+    2.00000n    0.         0.         0.         0.      
+    3.00000n    0.         0.         0.         0.      
+    4.00000n    0.         0.         0.         0.      
+    5.00000n    0.         0.         0.         0.      
+    6.00000n    0.         0.         0.         0.      
+    7.00000n    0.         0.         0.         0.      
+    8.00000n    0.         0.         0.         0.      
+    9.00000n    0.         0.         0.         0.      
+   10.00000n    0.         0.         0.         0.      
+   11.00000n    0.         0.         0.         0.      
+   12.00000n    0.         0.         0.         0.      
+   13.00000n    0.         0.         0.         0.      
+   14.00000n    0.         0.         0.         0.      
+   15.00000n    0.         0.         0.         0.      
+   16.00000n    0.         0.         0.         0.      
+   17.00000n    0.         0.         0.         0.      
+   18.00000n    0.         0.         0.         0.      
+   19.00000n    0.         0.         0.         0.      
+   20.00000n    0.         0.         0.         0.      
+   21.00000n    0.         0.         0.         0.      
+   22.00000n    0.         0.         0.         0.      
+   23.00000n    0.         0.         0.         0.      
+   24.00000n    0.         0.         0.         0.      
+   25.00000n    0.         0.         0.         0.      
+   26.00000n    0.         0.         0.         0.      
+   27.00000n    0.         0.         0.         0.      
+   28.00000n    0.         0.         0.         0.      
+   29.00000n    0.         0.         0.         0.      
+   30.00000n    0.         0.         0.         0.      
+   31.00000n    0.         0.         0.         0.      
+   32.00000n    0.         0.         0.         0.      
+   33.00000n    0.         0.         0.         0.      
+   34.00000n    0.         0.         0.         0.      
+   35.00000n    0.         0.         0.         0.      
+   36.00000n    0.         0.         0.         0.      
+   37.00000n    0.         0.         0.         0.      
+   38.00000n    0.         0.         0.         0.      
+   39.00000n    0.         0.         0.         0.      
+   40.00000n    0.         0.         0.         0.      
+   41.00000n    0.         0.         0.         0.      
+   42.00000n    0.         0.         0.         0.      
+   43.00000n    0.         0.         0.         0.      
+   44.00000n    0.         0.         0.         0.      
+   45.00000n    0.         0.         0.         0.      
+   46.00000n    0.         0.         0.         0.      
+   47.00000n    0.         0.         0.         0.      
+   48.00000n    0.         0.         0.         0.      
+   49.00000n    0.         0.         0.         0.      
+   50.00000n    0.         0.         0.         0.      
+   51.00000n    0.         0.         0.         0.      
+   52.00000n    0.         0.         0.         0.      
+   53.00000n    0.         0.         0.         0.      
+   54.00000n    0.         0.         0.         0.      
+   55.00000n    0.         0.         0.         0.      
+   56.00000n    0.         0.         0.         0.      
+   57.00000n    0.         0.         0.         0.      
+   58.00000n    0.         0.         0.         0.      
+   59.00000n    0.         0.         0.         0.      
+   60.00000n    0.         0.         0.         0.      
+   61.00000n    0.         0.         0.         0.      
+   62.00000n    0.         0.         0.         0.      
+   63.00000n    0.         0.         0.         0.      
+   64.00000n    0.         0.         0.         0.      
+   65.00000n    0.         0.         0.         0.      
+   66.00000n    0.         0.         0.         0.      
+   67.00000n    0.         0.         0.         0.      
+   68.00000n    0.         0.         0.         0.      
+   69.00000n    0.         0.         0.         0.      
+   70.00000n    0.         0.         0.         0.      
+   71.00000n    0.         0.         0.         0.      
+   72.00000n    0.         0.         0.         0.      
+   73.00000n    0.         0.         0.         0.      
+   74.00000n    0.         0.         0.         0.      
+   75.00000n    0.         0.         0.         0.      
+   76.00000n    0.         0.         0.         0.      
+   77.00000n    0.         0.         0.         0.      
+   78.00000n    0.         0.         0.         0.      
+   79.00000n    0.         0.         0.         0.      
+   80.00000n    0.         0.         0.         0.      
+   81.00000n    0.         0.         0.         0.      
+   82.00000n    0.         0.         0.         0.      
+   83.00000n    0.         0.         0.         0.      
+   84.00000n    0.         0.         0.         0.      
+   85.00000n    0.         0.         0.         0.      
+   86.00000n    0.         0.         0.         0.      
+   87.00000n    0.         0.         0.         0.      
+   88.00000n    0.         0.         0.         0.      
+   89.00000n    0.         0.         0.         0.      
+   90.00000n    0.         0.         0.         0.      
+   91.00000n    0.         0.         0.         0.      
+   92.00000n    0.         0.         0.         0.      
+   93.00000n    0.         0.         0.         0.      
+   94.00000n    0.         0.         0.         0.      
+   95.00000n    0.         0.         0.         0.      
+   96.00000n    0.         0.         0.         0.      
+   97.00000n    0.         0.         0.         0.      
+   98.00000n    0.         0.         0.         0.      
+   99.00000n    0.         0.         0.         0.      
+  100.00000n    0.         0.         0.         0.      
+y
+x
+
+ time         voltage    voltage    voltage    voltage   
+             b3         b2         b1         b0         
+    0.          0.         0.         1.8000     0.      
+    1.00000n    0.         0.         1.8000     0.      
+    2.00000n    0.         0.         1.8000     0.      
+    3.00000n    0.         0.         1.8000     0.      
+    4.00000n    0.         0.         1.8000     0.      
+    5.00000n    0.         0.         1.8000     0.      
+    6.00000n    0.         0.         1.8000     0.      
+    7.00000n    0.         0.         1.8000     0.      
+    8.00000n    0.         0.         1.8000     0.      
+    9.00000n    0.         0.         1.8000     0.      
+   10.00000n    0.         0.         1.8000     0.      
+   11.00000n    0.         0.         1.8000     0.      
+   12.00000n    0.         0.         1.8000     0.      
+   13.00000n    0.         0.         1.8000     0.      
+   14.00000n    0.         0.         1.8000     0.      
+   15.00000n    0.         0.         1.8000     0.      
+   16.00000n    0.         0.         1.8000     0.      
+   17.00000n    0.         0.         1.8000     0.      
+   18.00000n    0.         0.         1.8000     0.      
+   19.00000n    0.         0.         1.8000     0.      
+   20.00000n    0.         0.         1.8000     0.      
+   21.00000n    0.         0.         1.8000     0.      
+   22.00000n    0.         0.         1.8000     0.      
+   23.00000n    0.         0.         1.8000     0.      
+   24.00000n    0.         0.         1.8000     0.      
+   25.00000n    0.         0.         1.8000     0.      
+   26.00000n    0.         0.         1.8000     0.      
+   27.00000n    0.         0.         1.8000     0.      
+   28.00000n    0.         0.         1.8000     0.      
+   29.00000n    0.         0.         1.8000     0.      
+   30.00000n    0.         0.         1.8000     0.      
+   31.00000n    0.         0.         1.8000     0.      
+   32.00000n    0.         0.         1.8000     0.      
+   33.00000n    0.         0.         1.8000     0.      
+   34.00000n    0.         0.         1.8000     0.      
+   35.00000n    0.         0.         1.8000     0.      
+   36.00000n    0.         0.         1.8000     0.      
+   37.00000n    0.         0.         1.8000     0.      
+   38.00000n    0.         0.         1.8000     0.      
+   39.00000n    0.         0.         1.8000     0.      
+   40.00000n    0.         0.         1.8000     0.      
+   41.00000n    0.         0.         1.8000     0.      
+   42.00000n    0.         0.         1.8000     0.      
+   43.00000n    0.         0.         1.8000     0.      
+   44.00000n    0.         0.         1.8000     0.      
+   45.00000n    0.         0.         1.8000     0.      
+   46.00000n    0.         0.         1.8000     0.      
+   47.00000n    0.         0.         1.8000     0.      
+   48.00000n    0.         0.         1.8000     0.      
+   49.00000n    0.         0.         1.8000     0.      
+   50.00000n    0.         0.         1.8000     0.      
+   51.00000n    0.         0.         1.8000     0.      
+   52.00000n    0.         0.         1.8000     0.      
+   53.00000n    0.         0.         1.8000     0.      
+   54.00000n    0.         0.         1.8000     0.      
+   55.00000n    0.         0.         1.8000     0.      
+   56.00000n    0.         0.         1.8000     0.      
+   57.00000n    0.         0.         1.8000     0.      
+   58.00000n    0.         0.         1.8000     0.      
+   59.00000n    0.         0.         1.8000     0.      
+   60.00000n    0.         0.         1.8000     0.      
+   61.00000n    0.         0.         1.8000     0.      
+   62.00000n    0.         0.         1.8000     0.      
+   63.00000n    0.         0.         1.8000     0.      
+   64.00000n    0.         0.         1.8000     0.      
+   65.00000n    0.         0.         1.8000     0.      
+   66.00000n    0.         0.         1.8000     0.      
+   67.00000n    0.         0.         1.8000     0.      
+   68.00000n    0.         0.         1.8000     0.      
+   69.00000n    0.         0.         1.8000     0.      
+   70.00000n    0.         0.         1.8000     0.      
+   71.00000n    0.         0.         1.8000     0.      
+   72.00000n    0.         0.         1.8000     0.      
+   73.00000n    0.         0.         1.8000     0.      
+   74.00000n    0.         0.         1.8000     0.      
+   75.00000n    0.         0.         1.8000     0.      
+   76.00000n    0.         0.         1.8000     0.      
+   77.00000n    0.         0.         1.8000     0.      
+   78.00000n    0.         0.         1.8000     0.      
+   79.00000n    0.         0.         1.8000     0.      
+   80.00000n    0.         0.         1.8000     0.      
+   81.00000n    0.         0.         1.8000     0.      
+   82.00000n    0.         0.         1.8000     0.      
+   83.00000n    0.         0.         1.8000     0.      
+   84.00000n    0.         0.         1.8000     0.      
+   85.00000n    0.         0.         1.8000     0.      
+   86.00000n    0.         0.         1.8000     0.      
+   87.00000n    0.         0.         1.8000     0.      
+   88.00000n    0.         0.         1.8000     0.      
+   89.00000n    0.         0.         1.8000     0.      
+   90.00000n    0.         0.         1.8000     0.      
+   91.00000n    0.         0.         1.8000     0.      
+   92.00000n    0.         0.         1.8000     0.      
+   93.00000n    0.         0.         1.8000     0.      
+   94.00000n    0.         0.         1.8000     0.      
+   95.00000n    0.         0.         1.8000     0.      
+   96.00000n    0.         0.         1.8000     0.      
+   97.00000n    0.         0.         1.8000     0.      
+   98.00000n    0.         0.         1.8000     0.      
+   99.00000n    0.         0.         1.8000     0.      
+  100.00000n    0.         0.         1.8000     0.      
+y
+x
+
+ time         voltage    voltage    voltage    voltage   
+             s15        s14        s13        s12        
+    0.         12.4532m    6.4601n    1.7964     8.2591m 
+    1.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+    2.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+    3.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+    4.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+    5.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+    6.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+    7.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+    8.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+    9.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   10.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   11.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   12.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   13.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   14.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   15.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   16.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   17.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   18.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   19.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   20.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   21.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   22.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   23.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   24.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   25.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   26.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   27.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   28.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   29.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   30.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   31.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   32.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   33.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   34.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   35.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   36.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   37.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   38.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   39.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   40.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   41.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   42.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   43.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   44.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   45.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   46.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   47.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   48.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   49.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   50.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   51.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   52.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   53.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   54.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   55.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   56.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   57.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   58.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   59.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   60.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   61.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   62.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   63.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   64.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   65.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   66.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   67.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   68.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   69.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   70.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   71.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   72.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   73.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   74.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   75.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   76.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   77.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   78.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   79.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   80.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   81.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   82.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   83.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   84.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   85.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   86.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   87.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   88.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   89.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   90.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   91.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   92.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   93.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   94.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   95.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   96.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   97.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+   98.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+   99.00000n   12.4532m    6.4602n    1.7964     8.2591m 
+  100.00000n   12.4532m    6.4601n    1.7964     8.2591m 
+y
+x
+
+ time         voltage    voltage    voltage    voltage   
+             s11        s10        s9         s8         
+    0.          1.7451     6.4601n    1.7268    12.4532m 
+    1.00000n    1.7451     6.4602n    1.7268    12.4532m 
+    2.00000n    1.7451     6.4602n    1.7268    12.4532m 
+    3.00000n    1.7451     6.4601n    1.7268    12.4532m 
+    4.00000n    1.7451     6.4601n    1.7268    12.4532m 
+    5.00000n    1.7451     6.4601n    1.7268    12.4532m 
+    6.00000n    1.7451     6.4601n    1.7268    12.4532m 
+    7.00000n    1.7451     6.4601n    1.7268    12.4532m 
+    8.00000n    1.7451     6.4601n    1.7268    12.4532m 
+    9.00000n    1.7451     6.4602n    1.7268    12.4532m 
+   10.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   11.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   12.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   13.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   14.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   15.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   16.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   17.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   18.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   19.00000n    1.7451     6.4602n    1.7268    12.4532m 
+   20.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   21.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   22.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   23.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   24.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   25.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   26.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   27.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   28.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   29.00000n    1.7451     6.4602n    1.7268    12.4532m 
+   30.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   31.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   32.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   33.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   34.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   35.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   36.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   37.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   38.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   39.00000n    1.7451     6.4602n    1.7268    12.4532m 
+   40.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   41.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   42.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   43.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   44.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   45.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   46.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   47.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   48.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   49.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   50.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   51.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   52.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   53.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   54.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   55.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   56.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   57.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   58.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   59.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   60.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   61.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   62.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   63.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   64.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   65.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   66.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   67.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   68.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   69.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   70.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   71.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   72.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   73.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   74.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   75.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   76.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   77.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   78.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   79.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   80.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   81.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   82.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   83.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   84.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   85.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   86.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   87.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   88.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   89.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   90.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   91.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   92.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   93.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   94.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   95.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   96.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   97.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   98.00000n    1.7451     6.4601n    1.7268    12.4532m 
+   99.00000n    1.7451     6.4601n    1.7268    12.4532m 
+  100.00000n    1.7451     6.4601n    1.7268    12.4532m 
+y
+x
+
+ time         voltage    voltage    voltage    voltage   
+             s7         s6         s5         s4         
+    0.          1.8000    12.4532m    1.8000    12.4532m 
+    1.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    2.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    3.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    4.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    5.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    6.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    7.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    8.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    9.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   10.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   11.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   12.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   13.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   14.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   15.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   16.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   17.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   18.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   19.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   20.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   21.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   22.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   23.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   24.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   25.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   26.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   27.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   28.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   29.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   30.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   31.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   32.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   33.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   34.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   35.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   36.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   37.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   38.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   39.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   40.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   41.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   42.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   43.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   44.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   45.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   46.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   47.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   48.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   49.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   50.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   51.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   52.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   53.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   54.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   55.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   56.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   57.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   58.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   59.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   60.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   61.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   62.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   63.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   64.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   65.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   66.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   67.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   68.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   69.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   70.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   71.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   72.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   73.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   74.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   75.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   76.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   77.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   78.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   79.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   80.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   81.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   82.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   83.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   84.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   85.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   86.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   87.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   88.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   89.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   90.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   91.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   92.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   93.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   94.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   95.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   96.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   97.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   98.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   99.00000n    1.8000    12.4532m    1.8000    12.4532m 
+  100.00000n    1.8000    12.4532m    1.8000    12.4532m 
+y
+x
+
+ time         voltage    voltage    voltage    voltage   
+             s3         s2         s1         s0         
+    0.          1.8000    12.4532m    1.8000    12.4532m 
+    1.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    2.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    3.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    4.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    5.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    6.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    7.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    8.00000n    1.8000    12.4532m    1.8000    12.4532m 
+    9.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   10.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   11.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   12.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   13.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   14.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   15.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   16.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   17.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   18.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   19.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   20.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   21.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   22.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   23.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   24.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   25.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   26.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   27.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   28.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   29.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   30.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   31.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   32.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   33.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   34.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   35.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   36.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   37.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   38.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   39.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   40.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   41.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   42.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   43.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   44.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   45.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   46.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   47.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   48.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   49.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   50.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   51.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   52.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   53.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   54.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   55.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   56.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   57.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   58.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   59.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   60.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   61.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   62.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   63.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   64.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   65.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   66.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   67.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   68.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   69.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   70.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   71.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   72.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   73.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   74.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   75.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   76.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   77.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   78.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   79.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   80.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   81.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   82.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   83.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   84.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   85.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   86.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   87.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   88.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   89.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   90.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   91.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   92.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   93.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   94.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   95.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   96.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   97.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   98.00000n    1.8000    12.4532m    1.8000    12.4532m 
+   99.00000n    1.8000    12.4532m    1.8000    12.4532m 
+  100.00000n    1.8000    12.4532m    1.8000    12.4532m 
+y
+
+          ***** job concluded
+ ******  
+ 
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     2
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =    4579 # elements   =    1842
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =      18
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =    1824 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.17           1          83
+  transient          0.04         101          48          24 rev=         0
+  readin             0.04
+  errchk             0.04
+  setup              0.09
+  output             0.00
+
+
+           peak memory used         89.61 megabytes
+           total cpu time            0.39 seconds
+           total elapsed time        0.41 seconds
+           job started at     19:31:43 06/21/2024
+           job ended   at     19:31:44 06/21/2024
+           job total runtime         0.41 seconds
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.02(s)

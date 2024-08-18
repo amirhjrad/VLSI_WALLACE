@@ -1,0 +1,28 @@
+* "simulator" "HSPICE" 
+* "version" "P-2019.06-SP1-1 win64"
+* "format" "HSP"
+* "rundate" "18:39:33 06/17/2024 "
+* "netlist" "Q1_1.sp "
+* "runtitle" ""
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ clk =   0.            
++ d =   0.            
++ q =   1.8000        
++ qbar =   3.6701n       
++ vdd =   1.8000        
++ vss =   0.            
++ xdlatch.clkbar =   1.8000        
++ xdlatch.dbar =   1.8000        
++ xdlatch.out3 =   3.6701n       
++ xdlatch.out4 = 931.8740p       
++ xdlatch.out6 =   0.            
++ xdlatch.x3.n1 =   1.8000        
++ xdlatch.x4.n1 =   1.7135        
++ xdlatch.x5.n1 =   1.8000        
++ xdlatch.x6.n1 =   1.8000        
+***   END: Saved Operating Point ***                     
